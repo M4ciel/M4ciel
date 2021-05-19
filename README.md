@@ -1,11 +1,18 @@
-### Hi there 👋
+### Olá, eu sou Caio Maciel, estudando de 7º semestre de Engenharia da Computação. Atuo no mercado há 4 anos com desenvolvimento Web. Boa experiência com MVC, Scrum e, atualmente, estudando sobre DevOps.
+
+### Aqui estão algumas informações interessantes
+
+### 🔭 Estou trabalhando na W7M
+### 🌱 Estou aprendendo DevOps
+### 🤔 Estou procurando ajuda em Flutter
+### 🔗 Linkedin: https://www.linkedin.com/in/caio-maciel/
 
 <!--
 **M4ciel/M4ciel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
+- ### 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
