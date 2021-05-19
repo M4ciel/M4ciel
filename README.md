@@ -1,4 +1,4 @@
-### Olá, eu sou Caio Maciel, estudando de 7º semestre de Engenharia da Computação. Atuo no mercado há 4 anos com desenvolvimento Web. Boa experiência com MVC, Scrum e, atualmente, estudando sobre DevOps.
+### Olá, eu sou Caio Maciel, estudando de 7º semestre de Engenharia da Computação. Atuo no mercado há 4 anos com desenvolvimento Web. Boa experiência com Laravel, C#, Scrum e, atualmente, estudando sobre DevOps.
 
 ### Aqui estão algumas informações interessantes
 
