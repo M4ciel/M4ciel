@@ -2,7 +2,7 @@
 
 ### Aqui estão algumas informações interessantes
 
-### 🔭 Estou trabalhando na W7M
+### 🔭 Estou trabalhando na goFlux
 ### 🌱 Estou aprendendo DevOps
 ### 🤔 Estou procurando ajuda em Flutter
 ### 🔗 Linkedin: https://www.linkedin.com/in/caio-maciel/
