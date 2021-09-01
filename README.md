@@ -3,8 +3,8 @@
 ### Aqui estão algumas informações interessantes
 
 ### 🔭 Estou trabalhando na goFlux
-### 🌱 Estou aprendendo DevOps
-### 🤔 Estou procurando ajuda em Flutter
+### 🌱 Estou aprendendo Golang
+### 🤔 Estou procurando ajuda em Angular
 ### 🔗 Linkedin: https://www.linkedin.com/in/caio-maciel/
 
 <!--
