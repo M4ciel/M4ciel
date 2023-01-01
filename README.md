@@ -1,10 +1,9 @@
-### Olá, eu sou Caio Maciel, estudando de 7º semestre de Engenharia da Computação. Atuo no mercado há 4 anos com desenvolvimento Web. Boa experiência com Laravel, JavaScript, Scrum e, atualmente, estudando sobre DevOps e Comunicação.
+### Olá, eu sou Caio Maciel, estudando de 7º semestre de Engenharia da Computação. Atuo no mercado há 4 anos com desenvolvimento Web. Boa experiência com AdonisJs, JavaScript, Scrum e, atualmente, estudando sobre DevOps e Comunicação.
 
 ### Aqui estão algumas informações interessantes
 
 ### 🔭 Estou trabalhando na goFlux
-### 🌱 Estou aprendendo NestJs
-### 🤔 Estou procurando ajuda em Kafka
+### 🌱 Estou aprendendo Golang
 ### 🔗 Linkedin: https://www.linkedin.com/in/caio-maciel/
 
 <!--
