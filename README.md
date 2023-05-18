@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on AdonisJs<br>
+🔭 I’m currently working on NodeJs<br>
 🤝 I’m looking for help with Golang<br>
 🌱 I’m currently learning DevOps<br>
 💬 Ask me about PostgreSql
