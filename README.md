@@ -15,7 +15,7 @@ Cursando engenharia da computação. Foco em <b>Desenvolvimendo FullStack!<b/>
 </p>
 
 <p align="left">
-  💌 Aqui vai uma mensagem para entrar em contato com você: ⤵️
+  Entre em contato com os seguintes links: ⤵️
 </p>
 
 <p align="left">
