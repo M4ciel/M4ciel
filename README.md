@@ -19,7 +19,7 @@ Cursando engenharia da computação. Foco em <b>Desenvolvimendo FullStack!<b/>
 </p>
 
 <p align="left">
-  <a href="mailto=caiolmaciell@gmail.com" alt="Gmail">
+  <a href="mailto:caiolmaciell@gmail.com" alt="Gmail">
   <img src="https://img.shields.io/badge/-Gmail-FF0000?style=flat-square&labelColor=FF0000&logo=gmail&logoColor=white&link=caiolmaciell@gmail.com" /></a>
 
   <a href="https://www.linkedin.com/in/caio-maciel/" alt="LinkedIn">
