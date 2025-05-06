@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 const Contacts = () => {
 	return (
 		<section
-			className="px-6 py-16 text-center lg:max-w-4xl xl:max-w-7xl"
+			className="mx-auto px-6 py-16 text-center lg:max-w-4xl xl:max-w-7xl"
 			id="contact"
 		>
 			<h2 className="mb-6 text-3xl font-bold">Entre em contato</h2>
