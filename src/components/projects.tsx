@@ -14,14 +14,17 @@ const Projects = () => {
 	const { repos, categories, setFilter, filter } = useProjectsHook();
 
 	return (
-		<section className="mx-auto max-w-7xl py-12" id="projects">
+		<section
+			className="mx-auto w-full px-4 py-12 lg:max-w-4xl lg:px-0 xl:max-w-7xl"
+			id="projects"
+		>
 			<h2 className="mb-6 text-center text-3xl font-bold">Projetos</h2>
-			<div className="mb-8 flex justify-center gap-8 text-sm font-semibold">
+			<div className="mb-8 flex justify-center gap-4 text-sm font-semibold sm:gap-6">
 				{categories.map((categorie) => (
 					<Button
 						key={categorie}
 						onClick={() => setFilter(categorie)}
-						className={`cursor-pointer rounded-none bg-transparent uppercase ${
+						className={`cursor-pointer rounded-none bg-transparent px-3 py-2 text-xs uppercase sm:text-sm ${
 							filter === categorie
 								? "border-b-2 border-blue-500 text-blue-500"
 								: "text-white hover:text-blue-500"

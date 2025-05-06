@@ -8,14 +8,14 @@ const Hero = () => {
 	const formattedDate = today.toISOString().split("T")[0];
 
 	return (
-		<section className="mx-auto grid max-w-7xl grid-cols-2 items-center gap-8 pt-32 pb-20 text-center text-white">
+		<section className="mx-auto grid grid-cols-1 items-center gap-8 px-4 pt-24 pb-16 text-center text-white md:grid-cols-2 md:pt-32 md:pb-20 md:text-left lg:max-w-4xl lg:px-0 xl:max-w-7xl">
 			<div className="w-full space-y-4 text-start">
 				<div className="flex items-center gap-4">
 					<h3 className="text-2xl font-semibold uppercase">Olá!</h3>
-					<Separator className="max-w-md" />
+					<Separator className="w-full max-w-52 sm:max-w-xs lg:max-w-sm xl:max-w-md" />
 				</div>
 
-				<h1 className="text-5xl font-extrabold uppercase">
+				<h1 className="text-3xl font-extrabold uppercase md:text-5xl">
 					Eu sou Caio Maciel
 				</h1>
 				<p className="text-lg">

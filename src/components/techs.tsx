@@ -12,16 +12,17 @@ const Techs = () => {
 	return (
 		<TooltipProvider>
 			<section
-				className="mx-auto grid max-w-7xl grid-cols-3 gap-20 py-12"
+				className="mx-auto grid grid-cols-1 gap-12 px-4 py-12 lg:max-w-4xl lg:grid-cols-3 xl:max-w-7xl"
 				id="techs"
 			>
-				<div className="col-span-2 grid w-full grid-cols-4 gap-8">
+				<div className="grid grid-cols-3 gap-6 lg:col-span-2 lg:grid-cols-4">
 					{techs.map((tech) => (
 						<Tooltip key={tech.name}>
-							<TooltipTrigger className="size-40 border border-zinc-500 p-12">
+							<TooltipTrigger className="flex aspect-square items-center justify-center border border-zinc-500 p-6">
 								<img
 									src={`src/assets/techs/${tech.image}`}
 									alt={tech.name}
+									className="max-h-full max-w-full object-contain"
 								/>
 							</TooltipTrigger>
 							<TooltipContent>
@@ -30,7 +31,7 @@ const Techs = () => {
 						</Tooltip>
 					))}
 				</div>
-				<div className="grid min-w-80 grid-rows-2 space-y-12 bg-zinc-600 p-4">
+				<div className="grid min-w-full grid-rows-2 space-y-12 rounded-md bg-zinc-600 p-6 lg:min-w-80">
 					<div className="grid grid-cols-2 items-center justify-items-center">
 						<h1 className="text-7xl font-extrabold text-blue-500">
 							+5
@@ -39,7 +40,7 @@ const Techs = () => {
 							Anos de Experiencia Profissional
 						</h3>
 					</div>
-					<div className="mt-8 space-y-2 text-sm text-zinc-200">
+					<div className="space-y-3 text-sm text-zinc-200 lg:mt-8">
 						<p className="text-lg">
 							🚀 Foco em performance e escalabilidade
 						</p>
