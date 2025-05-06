@@ -3,10 +3,14 @@ import AboutImage from "../assets/about-us.png";
 const About = () => {
 	return (
 		<section
-			className="mx-auto grid max-w-7xl grid-cols-2 items-center gap-8 pt-32 pb-20 text-center text-white"
+			className="mx-auto grid grid-cols-1 items-center gap-8 px-4 pt-24 pb-16 text-center text-white md:grid-cols-2 md:pt-32 md:pb-20 lg:max-w-4xl lg:px-0 xl:max-w-7xl"
 			id="about"
 		>
-			<img src={AboutImage} alt="Imagem do Hero" className="mx-auto" />
+			<img
+				src={AboutImage}
+				alt="Imagem do Hero"
+				className="mx-auto hidden md:flex"
+			/>
 			<div className="w-full space-y-4 text-start">
 				<h3 className="text-2xl font-bold uppercase">
 					Uma Breve introdução sobre mim
