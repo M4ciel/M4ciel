@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 793.38 767.89">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 571.12px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #148fe2;
+        font-family: MVBoli, 'MV Boli';
+      }
+
+      .cls-2 {
+        font-size: 537.22px;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1">
+    <text class="cls-2" transform="translate(0 460.62) scale(1.28 1)"><tspan x="0" y="0">C</tspan></text>
+  </g>
+  <g id="Camada_2">
+    <text class="cls-1" transform="translate(240.95 597.78)"><tspan x="0" y="0">M</tspan></text>
+  </g>
+</svg>
