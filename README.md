@@ -2,16 +2,22 @@
 <img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="400px" width="400px" align="right">
 
 <p align="left"> 
-  Atuo desde 2018 como desenvolvedor web, tendo foco em aplicações performáticas e escaláveis. 
-Cursando engenharia da computação. Foco em <b>Desenvolvimendo FullStack!<b/>
+<b>Engenheiro de Dados</b> com mais de 5 anos de experiência no desenvolvimento de sistemas, com forte 
+atuação em arquitetura de dados, pipelines ETL/ELT e modelagem analítica. Especializado em <b>Airflow</b> 
+(Astro Python SDK), <b>Airbyte</b>, <b>dbt</b> e <b>BigQuery</b>, com expertise em migração de dados, escalabilidade e 
+otimização de performance.</br></br>
+Possuo experiência em construção de arquiteturas <b>Modern Data Stack</b>, garantindo governança e 
+eficiência no processamento e análise de dados. Tenho um perfil proativo e analítico, sempre buscando 
+as melhores soluções para problemas complexos. Além disso, atuei na liderança técnica de times e 
+projetos, promovendo boas práticas de engenharia de dados, CI/CD, versionamento e automação. 
 </p>
 
 <p align="left">
-  🦄 Linguagens: NodeJs | ReactJs | PostgreSql | Golang
+  🦄 Linguagens: NodeJs | ReactJs | PostgreSql | Golang | Python
 </p>
 
 <p align="left">
-  💼 Ferramentas: Git | Docker | Kafka
+  💼 Ferramentas: Git | Docker | Kafka | Airflow | DBT | GCP
 </p>
 
 <p align="left">
