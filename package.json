@@ -14,7 +14,7 @@
 		"shadcn",
 		"github-pages"
 	],
-	"homepage": "https://M4ciel.github.io",
+	"homepage": "https://m4ciel.github.io/M4ciel",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",

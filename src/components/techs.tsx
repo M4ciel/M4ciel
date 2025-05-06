@@ -19,10 +19,7 @@ const Techs = () => {
 					{techs.map((tech) => (
 						<Tooltip key={tech.name}>
 							<TooltipTrigger className="size-40 border border-zinc-500 p-12">
-								<img
-									src={`src/assets/techs/${tech.image}`}
-									alt={tech.name}
-								/>
+								<img src={tech.image} alt={tech.name} />
 							</TooltipTrigger>
 							<TooltipContent>
 								<p>{tech.name}</p>
