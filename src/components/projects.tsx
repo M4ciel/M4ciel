@@ -1,4 +1,5 @@
 import { useProjectsHook } from "../hooks/useProjects.hook";
+import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
 	Card,
@@ -19,7 +20,7 @@ const Projects = () => {
 			id="projects"
 		>
 			<h2 className="mb-6 text-center text-3xl font-bold">Projetos</h2>
-			<div className="mb-8 flex justify-center gap-4 text-sm font-semibold sm:gap-6">
+			<div className="mb-8 flex flex-wrap justify-center gap-4 text-sm font-semibold sm:gap-6">
 				{categories.map((categorie) => (
 					<Button
 						key={categorie}
@@ -54,17 +55,40 @@ const Projects = () => {
 										{repo.description ?? "..."}
 									</CardDescription>
 								</CardHeader>
-								<CardContent className="text-sm text-zinc-400">
+								<CardContent className="space-y-4 text-sm text-zinc-400">
 									<p>{repo.language}</p>
+									<div className="flex flex-wrap gap-2">
+										{repo.topics
+											?.filter(
+												(topic) => topic !== "public",
+											)
+											.map((topic) => (
+												<Badge
+													key={topic}
+													className="bg-blue-500 capitalize"
+												>
+													{topic}
+												</Badge>
+											))}
+									</div>
 								</CardContent>
 								<CardFooter>
 									<a
 										href={repo.html_url}
 										target="_blank"
-										className="inline-block text-sm text-blue-400 underline"
+										className="inline-block text-sm text-white underline"
 									>
 										Ver no GitHub
 									</a>
+									{repo.homepage && (
+										<a
+											href={repo.homepage}
+											target="_blank"
+											className="ml-auto inline-block text-sm text-blue-400 underline"
+										>
+											Ver site
+										</a>
+									)}
 								</CardFooter>
 							</Card>
 						</motion.div>
