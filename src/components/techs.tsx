@@ -34,7 +34,7 @@ const Techs = () => {
 				<div className="grid min-w-full grid-rows-2 space-y-12 rounded-md bg-zinc-600 p-6 lg:min-w-80">
 					<div className="grid grid-cols-2 items-center justify-items-center">
 						<h1 className="text-7xl font-extrabold text-blue-500">
-							+5
+							+7
 						</h1>
 						<h3 className="text-xl text-white">
 							Anos de Experiencia Profissional
