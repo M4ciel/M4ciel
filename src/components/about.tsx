@@ -16,21 +16,20 @@ const About = () => {
 					Uma Breve introdução sobre mim
 				</h3>
 				<p className="text-lg text-zinc-400">
-					Engenheiro de Dados e Desenvolvedor FullStack com mais de 5
-					anos de experiência no desenvolvimento de sistemas, com
-					forte atuação em arquitetura de dados, pipelines ETL/ELT e
-					modelagem analítica. Especializado em Airflow (Astro Python
-					SDK), Airbyte, dbt e BigQuery, com expertise em migração de
-					dados, escalabilidade e otimização de performance.
+					Sou o Caio Maciel, Engenheiro de Dados e Desenvolvedor
+					FullStack com mais de 5 anos de experiência construindo
+					soluções robustas, escaláveis e voltadas para performance.
+					Tenho paixão por dados, APIs bem feitas e arquitetura limpa,
+					e isso se reflete nos projetos que desenvolvo, desde
+					pipelines com Airflow, dbt e BigQuery até aplicações
+					modernas em TypeScript, Go e Python.
 				</p>
 				<p className="text-lg text-zinc-400">
-					Possuo experiência em construção de arquiteturas Modern Data
-					Stack, garantindo governança e eficiência no processamento e
-					análise de dados. Tenho um perfil proativo e analítico,
-					sempre buscando as melhores soluções para problemas
-					complexos. Além disso, atuei na liderança técnica de times e
-					projetos, promovendo boas práticas de engenharia de dados,
-					CI/CD, versionamento e automação.{" "}
+					Fora do teclado, sou apaixonado por esportes (vôlei
+					principalmente 🏐), música (de sertanejo a Bruno Mars 🎵),
+					violão e boas conversas. Acredito que a tecnologia é uma
+					ponte e meu objetivo é construir caminhos que conectem
+					dados, pessoas e resultados reais.
 				</p>
 				<div className="flex gap-4"></div>
 			</div>
