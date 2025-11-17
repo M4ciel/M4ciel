@@ -1,36 +1,43 @@
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { LanguageSwitcher } from "./language-switcher";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+	const { t } = useTranslation();
 	return (
 		<nav className="fixed top-0 left-0 z-50 w-full bg-zinc-900 text-white shadow">
-			<div className="mx-auto flex items-center justify-between px-4 py-4 lg:max-w-4xl lg:px-0 xl:max-w-7xl">
+			<div className="mx-auto flex items-center justify-between gap-4 px-4 py-4 lg:max-w-4xl lg:px-0 xl:max-w-7xl">
 				<span className="text-xl font-bold">Caio Maciel</span>
 
 				{/* Menu Desktop */}
-				<div className="hidden space-x-6 text-sm md:flex">
-					<a
-						href="#about"
-						className="transition-colors hover:text-blue-500"
-					>
-						Sobre
-					</a>
-					<a
-						href="#projects"
-						className="transition-colors hover:text-blue-500"
-					>
-						Projetos
-					</a>
-					<a
-						href="#contact"
-						className="transition-colors hover:text-blue-500"
-					>
-						Contato
-					</a>
+				<div className="hidden items-center gap-4 text-sm md:flex">
+					<div className="flex items-center space-x-6">
+						<a
+							href="#about"
+							className="transition-colors hover:text-blue-500"
+						>
+							{t("navbar.about")}
+						</a>
+						<a
+							href="#projects"
+							className="transition-colors hover:text-blue-500"
+						>
+							{t("navbar.projects")}
+						</a>
+						<a
+							href="#contact"
+							className="transition-colors hover:text-blue-500"
+						>
+							{t("navbar.contact")}
+						</a>
+					</div>
+					<LanguageSwitcher />
 				</div>
 
 				{/*Menu Mobile*/}
-				<div className="md:hidden">
+				<div className="flex items-center gap-2 md:hidden">
+					<LanguageSwitcher />
 					<Sheet>
 						<SheetTrigger aria-label="Abrir Menu">
 							<Menu className="size-6" />
@@ -47,20 +54,23 @@ const Navbar = () => {
 									href="#about"
 									className="hover:text-blue-500"
 								>
-									Sobre
+									{t("navbar.about")}
 								</a>
 								<a
 									href="#projects"
 									className="hover:text-blue-500"
 								>
-									Projetos
+									{t("navbar.projects")}
 								</a>
 								<a
 									href="#contact"
 									className="hover:text-blue-500"
 								>
-									Contato
+									{t("navbar.contact")}
 								</a>
+								<div className="pt-4">
+									<LanguageSwitcher />
+								</div>
 							</div>
 						</SheetContent>
 					</Sheet>

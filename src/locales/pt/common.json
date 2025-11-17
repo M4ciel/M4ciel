@@ -1,0 +1,64 @@
+{
+	"navbar": {
+		"language": "Idioma",
+		"about": "Sobre",
+		"projects": "Projetos",
+		"contact": "Contato"
+	},
+	"hero": {
+		"greeting": "Olá!",
+		"title": "Eu sou Caio Maciel",
+		"role": "Engenheiro de Dados e Desenvolvedor FullStack",
+		"downloadButton": {
+			"title": "Baixar meu CV",
+			"data": {
+				"title": "CV Engenheiro de Dados",
+				"file": "cv-dados_caio-maciel"
+			},
+			"dev": {
+				"title": "CV Desenvolvedor Fullstack",
+				"file": "cv-dev_caio-maciel"
+			},
+			"dataEngineer": "CV Engenheiro de Dados",
+			"fullStackDeveloper": "CV Desenvolvedor Fullstack"
+		},
+		"altImg": "Imagem do Hero"
+	},
+	"about": {
+		"title": "Uma breve introdução sobre mim",
+		"paragraphs": {
+			"first": "Sou o Caio Maciel, Engenheiro de Dados e Desenvolvedor FullStack com mais de 5 anos de experiência construindo soluções robustas, escaláveis e voltadas para performance. Tenho paixão por dados, APIs bem feitas e arquitetura limpa, e isso se reflete nos projetos que desenvolvo, desde pipelines com Airflow, dbt e BigQuery até aplicações modernas em TypeScript, Go e Python.",
+			"second": "Fora do teclado, sou apaixonado por esportes (vôlei principalmente 🏐), música (de sertanejo a Bruno Mars 🎵), violão e boas conversas. Acredito que a tecnologia é uma ponte e meu objetivo é construir caminhos que conectem dados, pessoas e resultados reais."
+		},
+		"imageAlt": "Imagem da seção sobre"
+	},
+	"techs": {
+		"stats": {
+			"years": "+7",
+			"label": "Anos de experiência profissional"
+		},
+		"highlights": {
+			"performance": "🚀 Foco em performance e escalabilidade",
+			"collaboration": "🤝 Colaboração e comunicação",
+			"quality": "🔍 Atenção a detalhes e qualidade"
+		}
+	},
+	"projects": {
+		"title": "Projetos",
+		"filters": {
+			"all": "Todos"
+		},
+		"links": {
+			"github": "Ver no GitHub",
+			"website": "Ver site"
+		},
+		"noDescription": "Descrição não disponível"
+	},
+	"contacts": {
+		"title": "Entre em contato",
+		"buttons": {
+			"email": "Gmail",
+			"linkedin": "LinkedIn"
+		}
+	}
+}
