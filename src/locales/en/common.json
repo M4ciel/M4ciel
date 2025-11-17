@@ -194,7 +194,18 @@
 			"github": "View on GitHub",
 			"website": "View live"
 		},
-		"noDescription": "Description not available"
+		"noDescription": "Description not available",
+		"state": {
+			"loading": "Loading projects...",
+			"error": {
+				"title": "We couldn't load the projects",
+				"description": "Please check your connection and try again.",
+				"retry": "Retry"
+			},
+			"lastUpdated": "Last updated: {{date}}",
+			"empty": "No projects found",
+			"emptyDescription": "New projects will be published soon."
+		}
 	},
 	"contacts": {
 		"title": "Get in touch",

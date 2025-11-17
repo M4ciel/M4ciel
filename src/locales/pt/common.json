@@ -193,7 +193,18 @@
 			"github": "Ver no GitHub",
 			"website": "Ver site"
 		},
-		"noDescription": "Descrição não disponível"
+		"noDescription": "Descrição não disponível",
+		"state": {
+			"loading": "Carregando projetos...",
+			"error": {
+				"title": "Não foi possível carregar os projetos",
+				"description": "Verifique sua conexão e tente novamente.",
+				"retry": "Tentar novamente"
+			},
+			"lastUpdated": "Última atualização: {{date}}",
+			"empty": "Nenhum projeto encontrado",
+			"emptyDescription": "Mais projetos serão publicados em breve."
+		}
 	},
 	"contacts": {
 		"title": "Entre em contato",
