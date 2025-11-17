@@ -1,78 +1,130 @@
 import type { Tech } from "../interfaces/tech";
-import Typescript from "../assets/techs/typescript.svg";
-import Go from "../assets/techs/go.svg";
 import Airflow from "../assets/techs/airflow.svg";
-import Excel from "../assets/techs/excel.svg";
-import Python from "../assets/techs/python.svg";
+import Airbyte from "../assets/techs/airbyte.svg";
 import Dbt from "../assets/techs/dbt.svg";
-import Gcp from "../assets/techs/gcp.svg";
-import Notion from "../assets/techs/notion.svg";
-import React from "../assets/techs/react.svg";
-import Next from "../assets/techs/nextjs.svg";
+import BigQuery from "../assets/techs/bigquery.svg";
+import Postgres from "../assets/techs/postgresql.svg";
+import DataLake from "../assets/techs/datalake.svg";
+import Python from "../assets/techs/python.svg";
+import Go from "../assets/techs/go.svg";
 import Nest from "../assets/techs/nestjs.svg";
-import Pandas from "../assets/techs/pandas.svg";
+import Next from "../assets/techs/nextjs.svg";
+import Typescript from "../assets/techs/typescript.svg";
+import React from "../assets/techs/react.svg";
+import Vue from "../assets/techs/vue.svg";
+import Laravel from "../assets/techs/laravel.svg";
+import Mysql from "../assets/techs/mysql.svg";
+import Dotnet from "../assets/techs/dotnet.svg";
 
 export const useTechsHook = () => {
 	const techs: Tech[] = [
 		{
-			name: "TypeScript",
-			badge: "language",
-			image: Typescript,
-		},
-		{
-			name: "Go",
-			badge: "language",
-			image: Go,
-		},
-		{
-			name: "Airflow",
+			name: "Apache Airflow",
 			badge: "tool",
 			image: Airflow,
+			important: true,
+			caseKey: "airflow",
 		},
 		{
-			name: "Excel",
+			name: "Airbyte",
 			badge: "tool",
-			image: Excel,
+			image: Airbyte,
+			important: true,
+			caseKey: "airbyte",
+		},
+		{
+			name: "dbt",
+			badge: "tool",
+			image: Dbt,
+			important: true,
+			caseKey: "dbt",
+		},
+		{
+			name: "BigQuery",
+			badge: "tool",
+			image: BigQuery,
+			important: true,
+			caseKey: "bigquery",
+		},
+		{
+			name: "PostgreSQL",
+			badge: "tool",
+			image: Postgres,
+			important: true,
+			caseKey: "postgresql",
+		},
+		{
+			name: "Data Lakes",
+			badge: "tool",
+			image: DataLake,
+			important: true,
+			caseKey: "datalakes",
 		},
 		{
 			name: "Python",
-			badge: "tool",
+			badge: "language",
 			image: Python,
+			important: true,
+			caseKey: "python",
 		},
 		{
-			name: "DBT",
-			badge: "tool",
-			image: Dbt,
+			name: "Golang",
+			badge: "language",
+			image: Go,
+			important: true,
+			caseKey: "golang",
 		},
 		{
-			name: "GCP",
-			badge: "cloud",
-			image: Gcp,
+			name: "NestJS",
+			badge: "framework",
+			image: Nest,
+			important: true,
+			caseKey: "nestjs",
 		},
 		{
-			name: "Notion",
-			badge: "tool",
-			image: Notion,
+			name: "Next.js",
+			badge: "framework",
+			image: Next,
+			important: true,
+			caseKey: "nextjs",
+		},
+		{
+			name: "TypeScript",
+			badge: "language",
+			image: Typescript,
+			important: true,
+			caseKey: "typescript",
 		},
 		{
 			name: "React",
 			badge: "framework",
 			image: React,
+			important: true,
+			caseKey: "react",
 		},
 		{
-			name: "NextJs",
-			badge: "tool",
-			image: Next,
+			name: "Laravel",
+			badge: "framework",
+			image: Laravel,
+			caseKey: "laravel",
 		},
 		{
-			name: "NestJs",
+			name: "MySQL",
 			badge: "tool",
-			image: Nest,
+			image: Mysql,
+			caseKey: "mysql",
 		},
 		{
-			name: "Pandas",
-			badge: "tool",
-			image: Pandas,
+			name: ".NET",
+			badge: "framework",
+			image: Dotnet,
+			caseKey: "dotnet",
+		},
+		{
+			name: "Vue.js",
+			badge: "framework",
+			image: Vue,
+			caseKey: "vue",
 		},
 	];
 
