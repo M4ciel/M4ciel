@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
 import type { Repo } from "../interfaces/repo";
 
+export const ALL_FILTER = "all";
+
 export const useProjectsHook = () => {
-	const [categories, setCategories] = useState<string[]>(["Todos"]);
-	const [filter, setFilter] = useState("Todos");
+	const [categories, setCategories] = useState<string[]>([]);
+	const [filter, setFilter] = useState<string>(ALL_FILTER);
 	const [repos, setRepos] = useState<Repo[]>([]);
 
 	useEffect(() => {
 		fetch("https://api.github.com/users/M4ciel/repos")
 			.then((res) => res.json())
 			.then((data) => {
+				if (!Array.isArray(data)) {
+					console.error("Unexpected GitHub response:", data);
+					return;
+				}
+
 				const filtered: Repo[] = data.filter((repo: Repo) =>
 					repo.topics?.includes("public"),
 				);
@@ -21,13 +28,16 @@ export const useProjectsHook = () => {
 					});
 				});
 
-				setCategories(["Todos", ...Array.from(tags)]);
+				setCategories(Array.from(tags));
 				setRepos(filtered);
+			})
+			.catch((error) => {
+				console.error("Failed to load repositories", error);
 			});
 	}, []);
 
 	const filteredProjects = repos.filter((repo) =>
-		filter === "Todos" ? true : repo.topics?.includes(filter),
+		filter === ALL_FILTER ? true : repo.topics?.includes(filter),
 	);
 
 	return { repos: filteredProjects, filter, setFilter, categories };
