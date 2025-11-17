@@ -41,6 +41,147 @@
 			"performance": "🚀 Foco em performance e escalabilidade",
 			"collaboration": "🤝 Colaboração e comunicação",
 			"quality": "🔍 Atenção a detalhes e qualidade"
+		},
+		"ticker": {
+			"label": "Stack em destaque",
+			"hint": "Passe o mouse para pausar e ver todas as tecnologias."
+		},
+		"caseLabels": {
+			"project": "Projeto",
+			"summary": "Resumo",
+			"impact": "Impacto",
+			"metrics": "Resultado",
+			"timeframe": "Período"
+		},
+		"cases": {
+			"airflow": {
+				"title": "Pipelines resilientes no Datahub",
+				"project": "Datahub · Plataforma de ingestão",
+				"summary": "Atualizei e otimizei DAGs no Apache Airflow aplicando modularização, versionamento e boas práticas.",
+				"impact": "Implementei multithreading nos fluxos críticos e fortaleci rastreabilidade, logging estruturado e segurança dos dados.",
+				"metrics": "Carga de aproximadamente 1 milhão de registros passou a terminar 10h mais rápido.",
+				"timeframe": "Jun/2025 – Out/2025"
+			},
+			"airbyte": {
+				"title": "Arquitetura MDS na Avod Tech",
+				"project": "Avod Tech · Plataforma de dados",
+				"summary": "Desenhei e implementei arquitetura baseada em Airbyte dentro da Modern Data Stack.",
+				"impact": "Combinei Airflow, Airbyte, dbt e BigQuery para sustentar ingestões confiáveis.",
+				"metrics": "Stack padronizada garantiu governança, qualidade e acessibilidade aos dados.",
+				"timeframe": "Out/2024 – Mar/2025"
+			},
+			"dbt": {
+				"title": "Modelagem analítica com dbt",
+				"project": "Avod Tech · Camada semântica",
+				"summary": "Modelei dados analíticos com dbt e padronizei transformações entre squads.",
+				"impact": "Otimizei queries e reduzi custos de armazenamento ao controlar dependências.",
+				"metrics": "Custos de armazenamento caíram conforme as queries foram otimizadas.",
+				"timeframe": "Out/2024 – Mar/2025"
+			},
+			"bigquery": {
+				"title": "Armazenamento analítico no BigQuery",
+				"project": "Avod Tech · Data warehouse",
+				"summary": "Estruturei o data warehouse no BigQuery para suportar pipelines escaláveis e eficientes.",
+				"impact": "Integrei ingestões orquestradas via Airflow/Airbyte com camadas transformadas por dbt.",
+				"metrics": "Tempo de ingestão foi reduzido em 50% após a reestruturação.",
+				"timeframe": "Out/2024 – Mar/2025"
+			},
+			"postgresql": {
+				"title": "Backends com PostgreSQL no projeto Suvinil",
+				"project": "Ioasys · Projeto Suvinil",
+				"summary": "Sustentei e evoluí integrações em Node.js, AWS Lambda e PostgreSQL para o backend do cliente.",
+				"impact": "Corrigi bugs críticos e mantive a aplicação alinhada às demandas de negócio.",
+				"metrics": "A estabilidade em produção aumentou 10%.",
+				"timeframe": "Nov/2023 – Jul/2024"
+			},
+			"datalakes": {
+				"title": "Migração para data lakes",
+				"project": "Avod Tech · Plataforma de dados",
+				"summary": "Liderei a migração de bancos PostgreSQL para data lakes e ambientes cloud.",
+				"impact": "Cuidei para que governança, qualidade e acessibilidade fossem preservadas em cada etapa.",
+				"metrics": "Migração manteve governança e acessos controlados para os times.",
+				"timeframe": "Out/2024 – Mar/2025"
+			},
+			"python": {
+				"title": "Revitalização de pipelines em Python",
+				"project": "Datahub · Plataforma de ingestão",
+				"summary": "Reestruturei processos críticos em Python focando em ingestão e transformação de dados.",
+				"impact": "Fortaleci rastreabilidade, logging estruturado e segurança durante a revisão de pipelines legados.",
+				"metrics": "Melhorias de arquitetura aumentaram escalabilidade e manutenibilidade.",
+				"timeframe": "Jun/2025 – Out/2025"
+			},
+			"golang": {
+				"title": "Serviços Golang na GoFlux",
+				"project": "GoFlux · Plataforma logística",
+				"summary": "Desenvolvi serviços backend em Golang (Fiber) para dados de frete, negociação e bolsa de valores.",
+				"impact": "Atuei como liderança técnica definindo arquitetura e realizando code reviews.",
+				"metrics": "Coordenei um squad com 7 devs, 1 UX e 1 QA.",
+				"timeframe": "Ago/2021 – Fev/2023"
+			},
+			"nestjs": {
+				"title": "APIs escaláveis em NestJS",
+				"project": "GoFlux · Plataforma logística",
+				"summary": "Construí APIs escaláveis em NestJS (Node.js) para suportar os produtos da GoFlux.",
+				"impact": "Implementei melhores práticas de clean code e SOLID em todo o time.",
+				"metrics": "Projetos envolveram dados complexos de fretes, negociação e bolsa de valores.",
+				"timeframe": "Ago/2021 – Fev/2023"
+			},
+			"nextjs": {
+				"title": "Frontend Next.js do projeto Suvinil",
+				"project": "Ioasys · Projeto Suvinil",
+				"summary": "Atuei no frontend Next.js sustentando e evoluindo a aplicação do cliente.",
+				"impact": "Corrigi bugs críticos e garanti entregas contínuas em ambiente ágil.",
+				"metrics": "A estabilidade em produção subiu 10%.",
+				"timeframe": "Nov/2023 – Jul/2024"
+			},
+			"typescript": {
+				"title": "TypeScript entre backend e frontend",
+				"project": "GoFlux · Squad logística & Ioasys · Projeto Suvinil",
+				"summary": "Desenvolvi APIs em NestJS/Node e mantive o frontend Next.js utilizando TypeScript como base.",
+				"impact": "Atuei como liderança técnica com code reviews, documentação padronizada e correção de bugs críticos.",
+				"metrics": "Squad com 7 devs, 1 UX e 1 QA; estabilidade do Suvinil +10% e onboarding -30%.",
+				"timeframe": "Ago/2021 – Jul/2024"
+			},
+			"react": {
+				"title": "Frontend React do projeto Suvinil",
+				"project": "Ioasys · Projeto Suvinil",
+				"summary": "Atuei no frontend em Next.js (React) sustentando e evoluindo o portal do cliente.",
+				"impact": "Corrigi bugs críticos e mantive a documentação alinhada ao time ágil.",
+				"metrics": "Estabilidade em produção cresceu 10% e o onboarding caiu 30%.",
+				"timeframe": "Nov/2023 – Jul/2024"
+			},
+			"vue": {
+				"title": "Frontend Vue.js para live streams",
+				"project": "W7M · Plataforma de gestão de Adsense",
+				"summary": "Construí o frontend em Vue.js integrado a Laravel, Node.js e MySQL.",
+				"impact": "Atuei em ambiente Kanban focado em monetização de streamers.",
+				"metrics": "Otimizações aumentaram a rentabilidade dos anúncios.",
+				"timeframe": "Jul/2020 – Ago/2021"
+			},
+			"laravel": {
+				"title": "Serviços Laravel para publicidade",
+				"project": "W7M · Plataforma de gestão de Adsense",
+				"summary": "Implementei serviços Laravel que sustentavam fluxos de anúncios para live streams.",
+				"impact": "Orquestrei integrações com Node.js, Vue.js e MySQL.",
+				"metrics": "Gestão de anúncios foi otimizada para ampliar monetização.",
+				"timeframe": "Jul/2020 – Ago/2021"
+			},
+			"mysql": {
+				"title": "Modelagem MySQL na W7M",
+				"project": "W7M · Plataforma de gestão de Adsense",
+				"summary": "Modelei e mantive o banco MySQL que suportava a plataforma de publicidade.",
+				"impact": "Integrações com Laravel, Node.js e Vue.js garantiram dados consistentes.",
+				"metrics": "Ajustes possibilitaram otimizar a gestão de anúncios para os streamers.",
+				"timeframe": "Jul/2020 – Ago/2021"
+			},
+			"dotnet": {
+				"title": "Backends industriais em .NET",
+				"project": "Seiren do Brasil · Sistemas de fábrica",
+				"summary": "Desenvolvi backend com .NET para integrar sistemas industriais.",
+				"impact": "Implementei webservices SOAP para conectar aplicações da planta.",
+				"metrics": "Também ofereci suporte técnico e onboarding de novos devs.",
+				"timeframe": "Jan/2019 – Jul/2020"
+			}
 		}
 	},
 	"projects": {

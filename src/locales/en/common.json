@@ -42,6 +42,147 @@
 			"performance": "🚀 Focus on performance and scalability",
 			"collaboration": "🤝 Collaboration and communication",
 			"quality": "🔍 Attention to detail and quality"
+		},
+		"ticker": {
+			"label": "Core stack",
+			"hint": "Hover to pause and explore the tools I use daily."
+		},
+		"caseLabels": {
+			"project": "Project",
+			"summary": "Summary",
+			"impact": "Impact",
+			"metrics": "Result",
+			"timeframe": "Timeframe"
+		},
+		"cases": {
+			"airflow": {
+				"title": "Resilient pipelines at Datahub",
+				"project": "Datahub · Ingestion platform",
+				"summary": "Refreshed and optimized Apache Airflow DAGs with modularization, versioning and coding standards.",
+				"impact": "Introduced multithreading in critical flows and reinforced traceability, structured logging and data security.",
+				"metrics": "Loads of roughly 1 million records now finish 10 hours faster.",
+				"timeframe": "Jun/2025 – Oct/2025"
+			},
+			"airbyte": {
+				"title": "Modern Data Stack at Avod Tech",
+				"project": "Avod Tech · Data platform",
+				"summary": "Designed and implemented an Airbyte-centric architecture inside the Modern Data Stack.",
+				"impact": "Paired Airflow, Airbyte, dbt and BigQuery to sustain reliable ingest pipelines.",
+				"metrics": "The standardized stack preserved governance, data quality and accessibility.",
+				"timeframe": "Oct/2024 – Mar/2025"
+			},
+			"dbt": {
+				"title": "Analytical modeling with dbt",
+				"project": "Avod Tech · Semantic layer",
+				"summary": "Modeled analytical datasets with dbt and aligned transformations across squads.",
+				"impact": "Optimized queries and cut storage costs by controlling dependencies.",
+				"metrics": "Storage spend dropped as queries were streamlined.",
+				"timeframe": "Oct/2024 – Mar/2025"
+			},
+			"bigquery": {
+				"title": "BigQuery powering the warehouse",
+				"project": "Avod Tech · Data warehouse",
+				"summary": "Structured the data warehouse on BigQuery to back scalable, efficient pipelines.",
+				"impact": "Hooked Airflow/Airbyte ingestions into dbt-transformed layers.",
+				"metrics": "Ingestion time was reduced by 50% after the overhaul.",
+				"timeframe": "Oct/2024 – Mar/2025"
+			},
+			"postgresql": {
+				"title": "PostgreSQL backbone for Suvinil",
+				"project": "Ioasys · Suvinil project",
+				"summary": "Maintained Node.js, AWS Lambda and PostgreSQL integrations for the client backend.",
+				"impact": "Fixed critical bugs and kept the application aligned with business needs.",
+				"metrics": "Production stability increased by 10%.",
+				"timeframe": "Nov/2023 – Jul/2024"
+			},
+			"datalakes": {
+				"title": "PostgreSQL-to-data-lake migration",
+				"project": "Avod Tech · Data platform",
+				"summary": "Led the migration of PostgreSQL workloads to data lakes and cloud environments.",
+				"impact": "Ensured governance, data quality and accessibility stayed intact along the journey.",
+				"metrics": "Governance and access controls remained enforced after the migration.",
+				"timeframe": "Oct/2024 – Mar/2025"
+			},
+			"python": {
+				"title": "Python pipelines revitalized",
+				"project": "Datahub · Ingestion platform",
+				"summary": "Refactored critical Python processes focused on ingestion and transformation.",
+				"impact": "Strengthened traceability, logging and security while reviewing legacy pipelines.",
+				"metrics": "Architecture upgrades improved scalability and maintainability.",
+				"timeframe": "Jun/2025 – Oct/2025"
+			},
+			"golang": {
+				"title": "Golang services at GoFlux",
+				"project": "GoFlux · Logistics platform",
+				"summary": "Built backend services in Golang (Fiber) for freight, negotiation and stock-exchange data.",
+				"impact": "Acted as technical lead defining architecture and running code reviews.",
+				"metrics": "Led a squad with 7 devs, 1 UX and 1 QA.",
+				"timeframe": "Aug/2021 – Feb/2023"
+			},
+			"nestjs": {
+				"title": "Scalable NestJS APIs",
+				"project": "GoFlux · Logistics platform",
+				"summary": "Crafted scalable NestJS (Node.js) APIs for GoFlux products.",
+				"impact": "Embedded clean code and SOLID practices across the team.",
+				"metrics": "Projects handled complex freight, negotiation and exchange datasets.",
+				"timeframe": "Aug/2021 – Feb/2023"
+			},
+			"nextjs": {
+				"title": "Next.js frontend for Suvinil",
+				"project": "Ioasys · Suvinil project",
+				"summary": "Supported and evolved the client's Next.js frontend.",
+				"impact": "Fixed critical bugs and ensured continuous delivery inside an agile setup.",
+				"metrics": "Production stability rose by 10%.",
+				"timeframe": "Nov/2023 – Jul/2024"
+			},
+			"typescript": {
+				"title": "TypeScript across backend and frontend",
+				"project": "GoFlux logistics squad & Ioasys · Suvinil project",
+				"summary": "Built NestJS/Node APIs and maintained the Next.js frontend with TypeScript end to end.",
+				"impact": "Acted as tech lead with code reviews, standardized docs and critical bug fixes.",
+				"metrics": "Squad of 7 devs, 1 UX, 1 QA; production stability +10% and onboarding -30%.",
+				"timeframe": "Aug/2021 – Jul/2024"
+			},
+			"react": {
+				"title": "React frontend for Suvinil",
+				"project": "Ioasys · Suvinil project",
+				"summary": "Supported and evolved the client's Next.js (React) portal.",
+				"impact": "Fixed critical bugs and kept documentation aligned with the agile team.",
+				"metrics": "Production stability rose 10% and onboarding dropped 30%.",
+				"timeframe": "Nov/2023 – Jul/2024"
+			},
+			"vue": {
+				"title": "Vue.js frontend for live streams",
+				"project": "W7M · Adsense management platform",
+				"summary": "Built the Vue.js frontend integrated with Laravel, Node.js and MySQL.",
+				"impact": "Worked in a Kanban setup focused on streamer monetization.",
+				"metrics": "Optimizations increased ad revenue for partners.",
+				"timeframe": "Jul/2020 – Aug/2021"
+			},
+			"laravel": {
+				"title": "Laravel services for advertising",
+				"project": "W7M · Adsense management platform",
+				"summary": "Implemented Laravel services sustaining ad flows for live streams.",
+				"impact": "Orchestrated integrations with Node.js, Vue.js and MySQL.",
+				"metrics": "Ad management was optimized to grow monetization.",
+				"timeframe": "Jul/2020 – Aug/2021"
+			},
+			"mysql": {
+				"title": "MySQL modeling at W7M",
+				"project": "W7M · Adsense management platform",
+				"summary": "Modeled and maintained the MySQL database powering the product.",
+				"impact": "Kept data consistent across Laravel, Node.js and Vue.js services.",
+				"metrics": "Database tuning enabled better ad management for streamers.",
+				"timeframe": "Jul/2020 – Aug/2021"
+			},
+			"dotnet": {
+				"title": ".NET backends for industrial systems",
+				"project": "Seiren do Brasil · Factory systems",
+				"summary": "Developed .NET backends that integrated factory applications.",
+				"impact": "Implemented SOAP webservices to connect the plant systems.",
+				"metrics": "Also handled technical support and onboarding for new devs.",
+				"timeframe": "Jan/2019 – Jul/2020"
+			}
 		}
 	},
 	"projects": {
