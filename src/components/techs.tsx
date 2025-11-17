@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useTechsHook } from "../hooks/useTechs.hook";
 import {
 	Tooltip,
@@ -8,6 +9,7 @@ import {
 
 const Techs = () => {
 	const { techs } = useTechsHook();
+	const { t } = useTranslation();
 
 	return (
 		<TooltipProvider>
@@ -34,19 +36,21 @@ const Techs = () => {
 				<div className="grid min-w-full grid-rows-2 space-y-12 rounded-md bg-zinc-600 p-6 lg:min-w-80">
 					<div className="grid grid-cols-2 items-center justify-items-center">
 						<h1 className="text-7xl font-extrabold text-blue-500">
-							+7
+							{t("techs.stats.years")}
 						</h1>
 						<h3 className="text-xl text-white">
-							Anos de Experiencia Profissional
+							{t("techs.stats.label")}
 						</h3>
 					</div>
 					<div className="space-y-3 text-sm text-zinc-200 lg:mt-8">
 						<p className="text-lg">
-							🚀 Foco em performance e escalabilidade
+							{t("techs.highlights.performance")}
 						</p>
-						<p className="text-lg">🤝 Colaboração e comunicação</p>
 						<p className="text-lg">
-							🔍 Atenção a detalhes e qualidade
+							{t("techs.highlights.collaboration")}
+						</p>
+						<p className="text-lg">
+							{t("techs.highlights.quality")}
 						</p>
 					</div>
 				</div>

@@ -1,0 +1,65 @@
+{
+	"navbar": {
+		"language": "Language",
+		"about": "About",
+		"projects": "Projects",
+		"contact": "Contact"
+	},
+	"hero": {
+		"greeting": "Hello!",
+		"title": "I'm Caio Maciel",
+		"role": "Data Engineer and FullStack Developer",
+
+		"downloadButton": {
+			"title": "Download my CV",
+			"data": {
+				"title": "Data Engineer CV",
+				"file": "cv-data_caio-maciel"
+			},
+			"dev": {
+				"title": "Fullstack Developer CV",
+				"file": "cv-dev_caio-maciel"
+			},
+			"dataEngineer": "Data Engineer CV",
+			"fullStackDeveloper": "Fullstack Developer CV"
+		},
+		"altImg": "Hero illustration"
+	},
+	"about": {
+		"title": "A brief introduction about me",
+		"paragraphs": {
+			"first": "I'm Caio Maciel, a Data Engineer and FullStack Developer with over 5 years of experience building robust, scalable and performance-driven solutions. I love data, well-crafted APIs and clean architecture, and that shows up in every project I build, from pipelines with Airflow, dbt and BigQuery to modern applications in TypeScript, Go and Python.",
+			"second": "Away from the keyboard I'm passionate about sports (mainly volleyball 🏐), music (from sertanejo to Bruno Mars 🎵), playing guitar and good conversations. I believe technology is a bridge, and my goal is to build paths that connect data, people and real results."
+		},
+		"imageAlt": "About section illustration"
+	},
+	"techs": {
+		"stats": {
+			"years": "+7",
+			"label": "Years of professional experience"
+		},
+		"highlights": {
+			"performance": "🚀 Focus on performance and scalability",
+			"collaboration": "🤝 Collaboration and communication",
+			"quality": "🔍 Attention to detail and quality"
+		}
+	},
+	"projects": {
+		"title": "Projects",
+		"filters": {
+			"all": "All"
+		},
+		"links": {
+			"github": "View on GitHub",
+			"website": "View live"
+		},
+		"noDescription": "Description not available"
+	},
+	"contacts": {
+		"title": "Get in touch",
+		"buttons": {
+			"email": "Email",
+			"linkedin": "LinkedIn"
+		}
+	}
+}

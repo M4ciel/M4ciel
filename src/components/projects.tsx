@@ -1,4 +1,5 @@
-import { useProjectsHook } from "../hooks/useProjects.hook";
+import { useTranslation } from "react-i18next";
+import { ALL_FILTER, useProjectsHook } from "../hooks/useProjects.hook";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import {
@@ -13,27 +14,37 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Projects = () => {
 	const { repos, categories, setFilter, filter } = useProjectsHook();
+	const { t } = useTranslation();
+	const filters = [ALL_FILTER, ...categories];
 
 	return (
 		<section
 			className="mx-auto w-full px-4 py-12 lg:max-w-4xl lg:px-0 xl:max-w-7xl"
 			id="projects"
 		>
-			<h2 className="mb-6 text-center text-3xl font-bold">Projetos</h2>
+			<h2 className="mb-6 text-center text-3xl font-bold">
+				{t("projects.title")}
+			</h2>
 			<div className="mb-8 flex flex-wrap justify-center gap-4 text-sm font-semibold sm:gap-6">
-				{categories.map((categorie) => (
-					<Button
-						key={categorie}
-						onClick={() => setFilter(categorie)}
-						className={`cursor-pointer rounded-none bg-transparent px-3 py-2 text-xs uppercase sm:text-sm ${
-							filter === categorie
-								? "border-b-2 border-blue-500 text-blue-500"
-								: "text-white hover:text-blue-500"
-						}`}
-					>
-						{categorie}
-					</Button>
-				))}
+				{filters.map((categorie) => {
+					const isAll = categorie === ALL_FILTER;
+					const label = isAll
+						? t("projects.filters.all")
+						: categorie;
+					return (
+						<Button
+							key={categorie}
+							onClick={() => setFilter(categorie)}
+							className={`cursor-pointer rounded-none bg-transparent px-3 py-2 text-xs uppercase sm:text-sm ${
+								filter === categorie
+									? "border-b-2 border-blue-500 text-blue-500"
+									: "text-white hover:text-blue-500"
+							}`}
+						>
+							{label}
+						</Button>
+					);
+				})}
 			</div>
 
 			<div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -52,7 +63,8 @@ const Projects = () => {
 										{repo.name}
 									</CardTitle>
 									<CardDescription className="line-clamp-3 text-sm">
-										{repo.description ?? "..."}
+										{repo.description ??
+											t("projects.noDescription")}
 									</CardDescription>
 								</CardHeader>
 								<CardContent className="space-y-4 text-sm text-zinc-400">
@@ -78,7 +90,7 @@ const Projects = () => {
 										target="_blank"
 										className="inline-block text-sm text-white underline"
 									>
-										Ver no GitHub
+										{t("projects.links.github")}
 									</a>
 									{repo.homepage && (
 										<a
@@ -86,7 +98,7 @@ const Projects = () => {
 											target="_blank"
 											className="ml-auto inline-block text-sm text-blue-400 underline"
 										>
-											Ver site
+											{t("projects.links.website")}
 										</a>
 									)}
 								</CardFooter>
