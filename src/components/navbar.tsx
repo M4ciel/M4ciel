@@ -57,7 +57,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="fixed top-0 left-0 z-50 w-full bg-zinc-900 text-white shadow">
+		<nav className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-slate-950/70 text-white backdrop-blur-xl">
 			<div className="mx-auto flex items-center justify-between gap-4 px-4 py-4 lg:max-w-4xl lg:px-0 xl:max-w-7xl">
 				<span className="text-xl font-bold">Caio Maciel</span>
 
@@ -68,7 +68,7 @@ const Navbar = () => {
 							<a
 								key={item.id}
 								href={`#${item.id}`}
-								className="transition-colors hover:text-blue-500"
+								className="text-sm font-semibold uppercase tracking-[0.25rem] text-white/70 transition hover:text-white"
 								onClick={(event) => handleNavClick(event, item.id)}
 							>
 								{item.label}
@@ -87,7 +87,7 @@ const Navbar = () => {
 						</SheetTrigger>
 						<SheetContent
 							side="left"
-							className="border-r-zinc-500/20 bg-zinc-900 px-4 text-white"
+							className="border-r border-white/10 bg-slate-950/90 px-4 text-white backdrop-blur-xl"
 						>
 							<span className="mt-8 text-xl font-bold">
 								Caio Maciel

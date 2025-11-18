@@ -290,6 +290,9 @@
 		]
 	},
 	"techs": {
+		"kicker": "Stack em produção",
+		"title": "Techs & estudos de caso",
+		"subtitle": "Ferramentas, automações e o contexto que sustenta cada escolha.",
 		"stats": {
 			"years": "+7",
 			"label": "Anos de experiência profissional"
@@ -465,10 +468,13 @@
 		}
 	},
 	"projects": {
+		"kicker": "Código em produção",
 		"title": "Projetos",
+		"subtitle": "Dashboards, automações e experiências fullstack orientadas a resultados mensuráveis.",
 		"filters": {
 			"all": "Todos"
 		},
+		"languageFallback": "Multi-stack",
 		"links": {
 			"github": "Ver no GitHub",
 			"website": "Ver site"
@@ -527,14 +533,9 @@
 				"href": "https://github.com/M4ciel"
 			},
 			{
-				"id": "medium",
-				"label": "Medium",
-				"href": "https://medium.com/@caiomaciel"
-			},
-			{
-				"id": "certifications",
-				"label": "Certificações",
-				"href": "https://www.credly.com/users/caio-maciel"
+				"id": "linkedin",
+				"label": "LinkedIn",
+				"href": "https://www.linkedin.com/in/caio-maciel"
 			}
 		],
 		"copy": "© {{year}} Caio Maciel. Todos os direitos reservados."

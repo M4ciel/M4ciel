@@ -38,10 +38,7 @@ const Hero = () => {
 
 		const animationStep = (currentTime: number) => {
 			if (startTime === null) startTime = currentTime;
-			const progress = Math.min(
-				(currentTime - startTime) / duration,
-				1,
-			);
+			const progress = Math.min((currentTime - startTime) / duration, 1);
 			const eased = easeInOutCubic(progress);
 			window.scrollTo({
 				top: start + distance * eased,
@@ -70,32 +67,36 @@ const Hero = () => {
 
 	return (
 		<section
-			className="mx-auto grid grid-cols-1 items-center gap-8 px-4 pt-24 pb-16 text-center text-white md:grid-cols-2 md:pt-32 md:pb-20 md:text-left lg:max-w-4xl lg:px-0 xl:max-w-7xl"
+			className="relative mx-auto grid w-full grid-cols-1 items-center gap-10 px-4 pt-28 pb-16 text-white md:grid-cols-2 lg:max-w-4xl lg:px-0 xl:max-w-7xl"
 			id="hero"
 		>
-			<div className="w-full space-y-4 text-start">
+			<div className="pointer-events-none absolute inset-0">
+				<div className="absolute top-0 -right-10 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
+				<div className="absolute -bottom-12 left-10 h-72 w-72 rounded-full bg-emerald-400/20 blur-[140px]" />
+			</div>
+			<div className="relative w-full space-y-6 text-start">
 				<div className="flex items-center gap-4">
-					<h3 className="text-2xl font-semibold uppercase">
+					<h3 className="text-2xl font-semibold tracking-[0.35rem] text-white uppercase">
 						{t("hero.greeting")}
 					</h3>
-					<Separator className="w-full max-w-52 sm:max-w-xs lg:max-w-sm xl:max-w-md" />
+					<Separator className="w-full max-w-52 border-white/30 sm:max-w-xs lg:max-w-sm xl:max-w-md" />
 				</div>
 
-				<h1 className="text-3xl font-extrabold uppercase md:text-5xl">
+				<h1 className="text-4xl leading-tight font-extrabold uppercase md:text-5xl">
 					{t("hero.title")}
 				</h1>
-				<p className="text-lg">{t("hero.role")}</p>
+				<p className="text-lg text-zinc-300">{t("hero.role")}</p>
 				<div className="space-y-4">
 					<div className="grid gap-3 sm:grid-cols-2">
 						<DropdownMenu>
 							<DropdownMenuTrigger asChild>
-								<Button className="h-auto cursor-pointer rounded-lg bg-linear-150 from-blue-400 from-0% to-blue-600 to-100% px-6 py-4 text-base font-semibold uppercase tracking-wide transition hover:-translate-y-0.5 hover:shadow-lg">
+								<Button className="h-auto cursor-pointer rounded-lg bg-linear-150 from-blue-400 from-0% to-blue-600 to-100% px-6 py-4 text-base font-semibold tracking-wide uppercase transition hover:-translate-y-0.5 hover:shadow-lg">
 									<Download className="size-5" />
 									{t("hero.downloadButton.title")}
 									<ArrowUpRight className="size-4" />
 								</Button>
 							</DropdownMenuTrigger>
-							<DropdownMenuContent className="min-w-56 border-white/10 bg-zinc-900 text-white">
+							<DropdownMenuContent className="min-w-56 rounded-2xl border border-white/10 bg-slate-950/80 text-white backdrop-blur">
 								<a
 									href={dataCv}
 									download={`${t("hero.downloadButton.data.file")}_${formattedDate}`}
@@ -121,7 +122,7 @@ const Hero = () => {
 						<Button
 							asChild
 							variant="outline"
-							className="h-auto cursor-pointer rounded-lg border-white/40 bg-white/5 px-6 py-4 text-base font-semibold uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-white/10"
+							className="h-auto cursor-pointer rounded-lg border-white/40 bg-white/5 px-6 py-4 text-base font-semibold tracking-wide text-white uppercase transition hover:-translate-y-0.5 hover:bg-white/10"
 						>
 							<a href="#projects" onClick={scrollToProjects}>
 								<Code2 className="size-5" />
@@ -131,7 +132,7 @@ const Hero = () => {
 						</Button>
 					</div>
 					<div className="space-y-2">
-						<p className="text-sm font-semibold uppercase tracking-[0.4rem] text-blue-300">
+						<p className="text-sm font-semibold tracking-[0.4rem] text-blue-300 uppercase">
 							{t("hero.social.label")}
 						</p>
 						<div className="flex items-center gap-3">
@@ -141,9 +142,14 @@ const Hero = () => {
 									asChild
 									variant="ghost"
 									size="icon"
-									className="size-11 rounded-full border border-white/20 bg-white/5 text-white hover:border-white/60 hover:bg-white/10"
+									className="size-11 rounded-full border border-white/20 bg-white/5 text-white transition hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/10"
 								>
-									<a href={link.href} target="_blank" rel="noreferrer" aria-label={link.label}>
+									<a
+										href={link.href}
+										target="_blank"
+										rel="noreferrer"
+										aria-label={link.label}
+									>
 										{link.icon}
 									</a>
 								</Button>
@@ -152,7 +158,16 @@ const Hero = () => {
 					</div>
 				</div>
 			</div>
-			<img src={HeroImage} alt={t("hero.altImg")} className="mx-auto" />
+			<div className="relative flex justify-center">
+				<div className="absolute inset-0 rounded-[2.5rem] border border-white/10 bg-white/5 blur-3xl" />
+				<div className="relative flex aspect-square max-w-sm items-center justify-center rounded-[2.5rem]">
+					<img
+						src={HeroImage}
+						alt={t("hero.altImg")}
+						className="mx-auto w-full object-contain"
+					/>
+				</div>
+			</div>
 		</section>
 	);
 };
