@@ -1,5 +1,6 @@
 {
 	"navbar": {
+		"home": "Início",
 		"language": "Idioma",
 		"about": "Sobre",
 		"experience": "Experiências",
@@ -19,17 +20,72 @@
 			"dev": {
 				"title": "CV Desenvolvedor Fullstack",
 				"file": "cv-dev_caio-maciel"
-			},
-			"dataEngineer": "CV Engenheiro de Dados",
-			"fullStackDeveloper": "CV Desenvolvedor Fullstack"
+			}
+		},
+		"actions": {
+			"dataCall": "Agende uma call de Dados",
+			"devProjects": "Veja projetos de FullStack"
+		},
+		"social": {
+			"label": "Conecte comigo",
+			"linkedin": "Perfil no LinkedIn",
+			"github": "Perfil no GitHub"
 		},
 		"altImg": "Imagem do Hero"
 	},
 	"about": {
+		"kicker": "Quem eu sou",
 		"title": "Uma breve introdução sobre mim",
 		"paragraphs": {
 			"first": "Sou o Caio Maciel, Engenheiro de Dados e Desenvolvedor FullStack com mais de 5 anos de experiência construindo soluções robustas, escaláveis e voltadas para performance. Tenho paixão por dados, APIs bem feitas e arquitetura limpa, e isso se reflete nos projetos que desenvolvo, desde pipelines com Airflow, dbt e BigQuery até aplicações modernas em TypeScript, Go e Python.",
 			"second": "Fora do teclado, sou apaixonado por esportes (vôlei principalmente 🏐), música (de sertanejo a Bruno Mars 🎵), violão e boas conversas. Acredito que a tecnologia é uma ponte e meu objetivo é construir caminhos que conectem dados, pessoas e resultados reais."
+		},
+		"cards": {
+			"values": {
+				"id": "values",
+				"title": "Valores",
+				"description": "Como tomo decisões com clientes",
+				"items": [
+					"Transparência radical com executivos e squads.",
+					"Decisões guiadas por impacto e redução de risco.",
+					"Foco obsessivo em dados confiáveis antes do hype."
+				]
+			},
+			"softSkills": {
+				"id": "softSkills",
+				"title": "Soft skills",
+				"description": "O que segura a barra nas entregas",
+				"items": [
+					"Facilito alinhamentos entre tech e negócio.",
+					"Apoio squads com documentação e playbooks.",
+					"Mantenho ritmos sustentáveis mesmo sob pressão."
+				]
+			},
+			"hobbies": {
+				"id": "hobbies",
+				"title": "Hobbies",
+				"description": "Energia fora do teclado",
+				"items": [
+					"Vôlei e atividades ao ar livre para limpar a mente.",
+					"Violão e música para destravar criatividade.",
+					"Conversas e mentoria para outras pessoas devs."
+				]
+			},
+			"community": {
+				"id": "community",
+				"title": "Impacto na comunidade",
+				"description": "Mentorias e voluntariado",
+				"items": [
+					"Narrativas para talks em comunidades de dados e produto.",
+					"Mentoria voluntária para devs iniciantes e transições de carreira.",
+					"Projetos sociais pontuais com análise de dados e automação."
+				]
+			}
+		},
+		"cta": "Ver trajetória completa",
+		"modal": {
+			"title": "Timeline detalhada",
+			"subtitle": "Projetos e contextos que explicam como entrego valor em dados e software."
 		},
 		"imageAlt": "Imagem da seção sobre"
 	},
@@ -245,7 +301,30 @@
 		},
 		"ticker": {
 			"label": "Stack em destaque",
-			"hint": "Passe o mouse para pausar e ver todas as tecnologias."
+			"hint": "Passe o mouse para pausar e clique em qualquer tecnologia para abrir o case."
+		},
+		"kpis": {
+			"lead": "Resultados práticos",
+			"items": {
+				"throughput": {
+					"id": "throughput",
+					"value": "-10h",
+					"label": "prazos de pipeline",
+					"description": "Pipelines no Apache Airflow (Datahub) passaram a concluir cargas de 1M+ registros 10h mais rápido."
+				},
+				"costs": {
+					"id": "costs",
+					"value": "-50%",
+					"label": "janela de ingestão",
+					"description": "Reestruturação do BigQuery + dbt cortou 50% do tempo de ingestão e, com isso, o custo de execução."
+				},
+				"sla": {
+					"id": "sla",
+					"value": "+10%",
+					"label": "SLA em produção",
+					"description": "Integrando Node.js, AWS Lambda e PostgreSQL, aumentei em 10% a estabilidade em produção do projeto Suvinil."
+				}
+			}
 		},
 		"caseLabels": {
 			"project": "Projeto",
@@ -409,9 +488,55 @@
 	},
 	"contacts": {
 		"title": "Entre em contato",
+		"description": "Prefere conversar por mensagem? Preencha o formulário ou aproveite os atalhos rápidos para responder ainda hoje.",
 		"buttons": {
 			"email": "Gmail",
 			"linkedin": "LinkedIn"
+		},
+		"form": {
+			"name": "Nome",
+			"email": "E-mail",
+			"message": "Mensagem",
+			"placeholders": {
+				"name": "Como posso te chamar?",
+				"email": "nome@empresa.com",
+				"message": "Conte o contexto, desafios e objetivo do projeto."
+			},
+			"submit": "Enviar mensagem",
+			"success": "Obrigado! Recebi sua mensagem e responderei em breve.",
+			"error": "Algo deu errado ao enviar. Tente novamente ou use os canais ao lado.",
+			"missingEndpoint": "Configure a variável VITE_CONTACT_FORM_ENDPOINT para ativar o formulário.",
+			"validation": {
+				"name": "Informe seu nome completo.",
+				"email": "Informe um e-mail válido.",
+				"message": "Escreva ao menos 10 caracteres para entendermos o contexto."
+			}
+		},
+		"calendly": {
+			"cta": "Agendar no Calendly",
+			"title": "Escolha um horário",
+			"subtitle": "Reserve um slot de 30 minutos para conversarmos sobre dados, arquitetura ou vagas.",
+			"description": "Os horários são atualizados em tempo real; escolha o que fizer mais sentido para você."
 		}
+	},
+	"footer": {
+		"links": [
+			{
+				"id": "github",
+				"label": "GitHub",
+				"href": "https://github.com/M4ciel"
+			},
+			{
+				"id": "medium",
+				"label": "Medium",
+				"href": "https://medium.com/@caiomaciel"
+			},
+			{
+				"id": "certifications",
+				"label": "Certificações",
+				"href": "https://www.credly.com/users/caio-maciel"
+			}
+		],
+		"copy": "© {{year}} Caio Maciel. Todos os direitos reservados."
 	}
 }
