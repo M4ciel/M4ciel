@@ -2,6 +2,7 @@
 	"navbar": {
 		"language": "Idioma",
 		"about": "Sobre",
+		"experience": "Experiências",
 		"projects": "Projetos",
 		"contact": "Contato"
 	},
@@ -31,6 +32,206 @@
 			"second": "Fora do teclado, sou apaixonado por esportes (vôlei principalmente 🏐), música (de sertanejo a Bruno Mars 🎵), violão e boas conversas. Acredito que a tecnologia é uma ponte e meu objetivo é construir caminhos que conectem dados, pessoas e resultados reais."
 		},
 		"imageAlt": "Imagem da seção sobre"
+	},
+	"experience": {
+		"kicker": "Trajetória",
+		"title": "Experiências que constroem narrativa antes das stacks",
+		"subtitle": "Cada fase mistura liderança, entrega e confiabilidade em dados para que o mergulho técnico faça sentido.",
+		"present": "Atualmente",
+		"timeline": [
+			{
+				"id": "datahub-2025",
+				"company": "Datahub",
+				"role": "Engenheiro de Dados",
+				"badge": "Resiliência & escala",
+				"period": {
+					"start": "01/06/2025",
+					"end": "31/10/2025"
+				},
+				"location": "Remoto · Brasil",
+				"context": "Modernizei fluxos de ingestão e transformação no ecossistema Apache Airflow da Datahub para clientes fintech.",
+				"achievements": [
+					"Atualizei DAGs no Apache Airflow aplicando modularização, versionamento e boas práticas.",
+					"Implementei multithreading em rotinas críticas, acelerando a ingestão e transformação.",
+					"Reduzi mais de 10h em uma carga de 1M de registros e fortaleci observabilidade, logging estruturado e segurança."
+				],
+				"metrics": [
+					{
+						"value": "-10h",
+						"label": "tempo de processamento"
+					},
+					{
+						"value": "4",
+						"label": "DAGs críticas revistas"
+					},
+					{
+						"value": "100%",
+						"label": "governança reforçada"
+					}
+				],
+				"stack": ["Apache Airflow", "Python", "PostgreSQL", "GCP"]
+			},
+			{
+				"id": "avod-2024",
+				"company": "Avod Tech",
+				"role": "Engenheiro de Dados",
+				"badge": "Modern Data Stack",
+				"period": {
+					"start": "01/10/2024",
+					"end": "31/03/2025"
+				},
+				"location": "Remoto · São Paulo, Brasil",
+				"context": "Desenhei e implementei a Modern Data Stack combinando ingestão, modelagem e governança na Avod Tech.",
+				"achievements": [
+					"Estruturei ingestões com Airflow, Airbyte e dbt orquestrando a camada semântica no BigQuery.",
+					"Reduzi em 50% o tempo de ingestão com pipelines escaláveis e padrões operacionais.",
+					"Liderei a migração de cargas PostgreSQL para data lakes em nuvem, garantindo governança e acessibilidade."
+				],
+				"metrics": [
+					{
+						"value": "-50%",
+						"label": "tempo de ingestão"
+					},
+					{
+						"value": "4",
+						"label": "pilares da MDS"
+					},
+					{
+						"value": "100%",
+						"label": "cobertura de governança"
+					}
+				],
+				"stack": ["Airflow", "Airbyte", "dbt", "BigQuery", "PostgreSQL"]
+			},
+			{
+				"id": "ioasys-2023",
+				"company": "ioasys · Suvinil",
+				"role": "Analista de Software",
+				"badge": "Aceleração de produto",
+				"period": {
+					"start": "01/11/2023",
+					"end": "31/07/2024"
+				},
+				"location": "Remoto · São Paulo, Brasil",
+				"context": "Atuei no projeto Suvinil sustentando backend (Node.js, AWS Lambda, PostgreSQL) e frontend (Next.js).",
+				"achievements": [
+					"Mantive e evoluí serviços em Node.js + AWS Lambda que suportavam o B2B da Suvinil.",
+					"Dei sustentação ao frontend em Next.js resolvendo incidentes críticos.",
+					"Padronizei documentação técnica e playbooks de onboarding, reduzindo ramp-up."
+				],
+				"metrics": [
+					{
+						"value": "+10%",
+						"label": "estabilidade em produção"
+					},
+					{
+						"value": "-30%",
+						"label": "tempo de onboarding"
+					},
+					{
+						"value": "2",
+						"label": "plataformas sustentadas"
+					}
+				],
+				"stack": ["Node.js", "AWS Lambda", "PostgreSQL", "Next.js", "Scrum"]
+			},
+			{
+				"id": "goflux-2021",
+				"company": "GoFlux",
+				"role": "Líder técnico · Fullstack",
+				"badge": "Marketplace logístico",
+				"period": {
+					"start": "01/08/2021",
+					"end": "28/02/2023"
+				},
+				"location": "Remoto · São Paulo, Brasil",
+				"context": "Liderei a squad logística entregando produtos de frete, negociação e marketplace.",
+				"achievements": [
+					"Gerenciei uma squad com sete devs, além de UX e QA, definindo rituais e cadência.",
+					"Construí APIs em NestJS e serviços em Golang que suportavam fluxos de frete e precificação.",
+					"Defini arquitetura, code review e padrões de clean code adotados pelo time."
+				],
+				"metrics": [
+					{
+						"value": "9",
+						"label": "pessoas lideradas"
+					},
+					{
+						"value": "2",
+						"label": "stacks principais (NestJS & Go)"
+					},
+					{
+						"value": "3",
+						"label": "domínios logísticos"
+					}
+				],
+				"stack": ["NestJS", "Node.js", "Golang", "Fiber", "AWS"]
+			},
+			{
+				"id": "w7m-2020",
+				"company": "W7M",
+				"role": "Fullstack Web Developer",
+				"badge": "Plataforma Adsense",
+				"period": {
+					"start": "01/07/2020",
+					"end": "31/08/2021"
+				},
+				"location": "Remoto · Brasil",
+				"context": "Construí plataforma de gestão Adsense para streamers e creators.",
+				"achievements": [
+					"Desenvolvi a solução com Laravel, Node.js/Vue.js e MySQL.",
+					"Otimizei fluxos de gestão de anúncios aumentando a monetização para streamers.",
+					"Entreguei funcionalidades em fluxo Kanban focado em entrega contínua."
+				],
+				"metrics": [
+					{
+						"value": "1",
+						"label": "plataforma entregue"
+					},
+					{
+						"value": "3",
+						"label": "stacks principais"
+					},
+					{
+						"value": "Kanban",
+						"label": "modelo de entrega"
+					}
+				],
+				"stack": ["Laravel", "Node.js", "Vue.js", "MySQL"]
+			},
+			{
+				"id": "seiren-2019",
+				"company": "Seiren do Brasil",
+				"role": "Desenvolvedor de Sistemas Web",
+				"badge": "Sistemas fabris",
+				"period": {
+					"start": "01/01/2019",
+					"end": "31/07/2020"
+				},
+				"location": "Presencial · Sorocaba, Brasil",
+				"context": "Desenvolvi serviços backend sustentando a operação fabril e integrações.",
+				"achievements": [
+					"Construí serviços em .NET com webservices SOAP para sistemas da fábrica.",
+					"Garantí integrações entre equipamentos e sistemas corporativos.",
+					"Prestei suporte técnico e onboarding para novos desenvolvedores."
+				],
+				"metrics": [
+					{
+						"value": ".NET",
+						"label": "stack principal"
+					},
+					{
+						"value": "SOAP",
+						"label": "integrações"
+					},
+					{
+						"value": "Onboarding",
+						"label": "novos devs apoiados"
+					}
+				],
+				"stack": [".NET", "SOAP", "SQL Server"]
+			}
+		]
 	},
 	"techs": {
 		"stats": {

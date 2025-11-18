@@ -2,6 +2,7 @@
 	"navbar": {
 		"language": "Language",
 		"about": "About",
+		"experience": "Experience",
 		"projects": "Projects",
 		"contact": "Contact"
 	},
@@ -32,6 +33,206 @@
 			"second": "Away from the keyboard I'm passionate about sports (mainly volleyball 🏐), music (from sertanejo to Bruno Mars 🎵), playing guitar and good conversations. I believe technology is a bridge, and my goal is to build paths that connect data, people and real results."
 		},
 		"imageAlt": "About section illustration"
+	},
+	"experience": {
+		"kicker": "Trajectory",
+		"title": "Experience that builds a narrative before the stack",
+		"subtitle": "Each chapter mixes leadership, delivery and data reliability so the technical stack makes sense once you arrive there.",
+		"present": "Present",
+		"timeline": [
+			{
+				"id": "datahub-2025",
+				"company": "Datahub",
+				"role": "Data Engineer",
+				"badge": "Resilience & scale",
+				"period": {
+					"start": "01/06/2025",
+					"end": "31/10/2025"
+				},
+				"location": "Remote · Brazil",
+				"context": "Modernized ingestion and transformation workloads across Datahub's Apache Airflow estate serving fintech clients.",
+				"achievements": [
+					"Refreshed Apache Airflow DAGs with modular patterns, versioning and engineering best practices.",
+					"Introduced multithreading to critical routines, accelerating ingestion and transformation throughput.",
+					"Cut more than 10 hours from a 1M-record batch while reinforcing observability, structured logging and security."
+				],
+				"metrics": [
+					{
+						"value": "-10h",
+						"label": "processing time"
+					},
+					{
+						"value": "4",
+						"label": "critical DAGs revamped"
+					},
+					{
+						"value": "100%",
+						"label": "governance guardrails"
+					}
+				],
+				"stack": ["Apache Airflow", "Python", "PostgreSQL", "GCP"]
+			},
+			{
+				"id": "avod-2024",
+				"company": "Avod Tech",
+				"role": "Data Engineer",
+				"badge": "Modern Data Stack",
+				"period": {
+					"start": "01/10/2024",
+					"end": "31/03/2025"
+				},
+				"location": "Remote · São Paulo, Brazil",
+				"context": "Designed and implemented the Modern Data Stack combining ingestion, modeling and governance for Avod Tech.",
+				"achievements": [
+					"Architected ingestion flows with Airflow, Airbyte and dbt orchestrating the semantic layer on BigQuery.",
+					"Reduced ingestion time by 50% with scalable pipelines and operational standards.",
+					"Led the migration from PostgreSQL workloads to cloud data lakes while securing governance and accessibility."
+				],
+				"metrics": [
+					{
+						"value": "-50%",
+						"label": "ingestion time"
+					},
+					{
+						"value": "4",
+						"label": "Modern Stack pillars"
+					},
+					{
+						"value": "100%",
+						"label": "governance coverage"
+					}
+				],
+				"stack": ["Airflow", "Airbyte", "dbt", "BigQuery", "PostgreSQL"]
+			},
+			{
+				"id": "ioasys-2023",
+				"company": "ioasys · Suvinil",
+				"role": "Software Analyst",
+				"badge": "Product acceleration",
+				"period": {
+					"start": "01/11/2023",
+					"end": "31/07/2024"
+				},
+				"location": "Remote · São Paulo, Brazil",
+				"context": "Acted on the Suvinil project sustaining backend (Node.js, AWS Lambda, PostgreSQL) and frontend (Next.js) stacks.",
+				"achievements": [
+					"Maintained and evolved Node.js + AWS Lambda services that powered Suvinil's B2B experiences.",
+					"Sustained the Next.js frontend while resolving mission-critical incidents.",
+					"Standardized technical documentation and onboarding playbooks, trimming ramp-up time."
+				],
+				"metrics": [
+					{
+						"value": "+10%",
+						"label": "production stability"
+					},
+					{
+						"value": "-30%",
+						"label": "onboarding time"
+					},
+					{
+						"value": "2",
+						"label": "platforms shipped"
+					}
+				],
+				"stack": ["Node.js", "AWS Lambda", "PostgreSQL", "Next.js", "Scrum"]
+			},
+			{
+				"id": "goflux-2021",
+				"company": "GoFlux",
+				"role": "Tech Lead · Fullstack Developer",
+				"badge": "Logistics marketplace",
+				"period": {
+					"start": "01/08/2021",
+					"end": "28/02/2023"
+				},
+				"location": "Remote · São Paulo, Brazil",
+				"context": "Led the logistics squad delivering freight negotiation, marketplace and quoting products.",
+				"achievements": [
+					"Managed a squad with seven developers plus UX and QA, setting rituals and delivery cadence.",
+					"Built scalable NestJS APIs and Golang services powering freight, negotiation and pricing flows.",
+					"Defined architecture, code review practices and clean code standards adopted across the team."
+				],
+				"metrics": [
+					{
+						"value": "9",
+						"label": "people led"
+					},
+					{
+						"value": "2",
+						"label": "core stacks (NestJS & Go)"
+					},
+					{
+						"value": "3",
+						"label": "logistics domains"
+					}
+				],
+				"stack": ["NestJS", "Node.js", "Golang", "Fiber", "AWS"]
+			},
+			{
+				"id": "w7m-2020",
+				"company": "W7M",
+				"role": "Fullstack Web Developer",
+				"badge": "Adsense platform",
+				"period": {
+					"start": "01/07/2020",
+					"end": "31/08/2021"
+				},
+				"location": "Remote · Brazil",
+				"context": "Built a live-stream Adsense management platform used by content creators.",
+				"achievements": [
+					"Developed the solution with Laravel, Node.js/Vue.js and MySQL.",
+					"Optimized ad management flows that improved monetization for streamers.",
+					"Delivered features in a Kanban workflow focused on continuous delivery."
+				],
+				"metrics": [
+					{
+						"value": "1",
+						"label": "ads platform shipped"
+					},
+					{
+						"value": "3",
+						"label": "core stacks"
+					},
+					{
+						"value": "Kanban",
+						"label": "delivery model"
+					}
+				],
+				"stack": ["Laravel", "Node.js", "Vue.js", "MySQL"]
+			},
+			{
+				"id": "seiren-2019",
+				"company": "Seiren do Brasil",
+				"role": "Web Systems Developer",
+				"badge": "Factory systems",
+				"period": {
+					"start": "01/01/2019",
+					"end": "31/07/2020"
+				},
+				"location": "On-site · Sorocaba, Brazil",
+				"context": "Developed backend services supporting the factory operation and systems integration.",
+				"achievements": [
+					"Built backend services with .NET and SOAP webservices for manufacturing systems.",
+					"Ensured integrations between factory equipment and corporate systems remained reliable.",
+					"Provided technical support and onboarding for new developers."
+				],
+				"metrics": [
+					{
+						"value": ".NET",
+						"label": "core stack"
+					},
+					{
+						"value": "SOAP",
+						"label": "integrations"
+					},
+					{
+						"value": "Onboarding",
+						"label": "new devs mentored"
+					}
+				],
+				"stack": [".NET", "SOAP", "SQL Server"]
+			}
+		]
 	},
 	"techs": {
 		"stats": {

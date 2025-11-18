@@ -20,6 +20,12 @@ const Navbar = () => {
 							{t("navbar.about")}
 						</a>
 						<a
+							href="#experience"
+							className="transition-colors hover:text-blue-500"
+						>
+							{t("navbar.experience")}
+						</a>
+						<a
 							href="#projects"
 							className="transition-colors hover:text-blue-500"
 						>
@@ -55,6 +61,12 @@ const Navbar = () => {
 									className="hover:text-blue-500"
 								>
 									{t("navbar.about")}
+								</a>
+								<a
+									href="#experience"
+									className="hover:text-blue-500"
+								>
+									{t("navbar.experience")}
 								</a>
 								<a
 									href="#projects"
