@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Award, Github, PenSquare } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import type { JSX } from "react";
 
 type FooterLink = {
@@ -10,8 +10,7 @@ type FooterLink = {
 
 const footerIcons: Record<string, JSX.Element> = {
 	github: <Github className="size-4" />,
-	medium: <PenSquare className="size-4" />,
-	certifications: <Award className="size-4" />,
+	linkedin: <Linkedin className="size-4" />,
 };
 
 const Footer = () => {
@@ -21,15 +20,15 @@ const Footer = () => {
 	}) as FooterLink[];
 
 	return (
-		<footer className="mt-16 bg-black/60 text-white">
-			<div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-zinc-400">
+		<footer className="text-white">
+			<div className="mx-auto mt-12 flex w-full max-w-7xl flex-col gap-6 px-6 py-10 text-sm text-zinc-400 lg:px-12">
 				<div className="flex flex-wrap gap-4">
 					{links?.map((link) => (
 						<a
 							key={link.id}
 							href={link.href}
 							target="_blank"
-							className="flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-white transition hover:border-blue-400 hover:text-blue-300"
+							className="flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-white transition hover:border-blue-400 hover:text-blue-300"
 						>
 							{footerIcons[link.id] ?? (
 								<span className="size-2 rounded-full bg-blue-300" />

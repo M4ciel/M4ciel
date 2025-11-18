@@ -97,22 +97,26 @@ const Contacts = () => {
 
 	return (
 		<section
-			className="mx-auto w-full px-4 py-16 text-white lg:max-w-4xl lg:px-0 xl:max-w-7xl"
+			className="relative mx-auto w-full px-4 pb-20 text-white lg:max-w-4xl lg:px-0 xl:max-w-7xl"
 			id="contact"
 		>
-			<div className="mb-10 space-y-3 text-center">
-				<h2 className="text-3xl font-bold">
-					{t("contacts.title")}
-				</h2>
-				<p className="text-base text-zinc-300">
-					{t("contacts.description")}
-				</p>
+			<div className="pointer-events-none absolute inset-0">
+				<div className="absolute left-0 top-6 h-64 w-64 rounded-full bg-blue-500/15 blur-[120px]" />
+				<div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-emerald-400/15 blur-[140px]" />
 			</div>
+				<div className="relative mb-10 space-y-3 text-center">
+					<h2 className="text-3xl font-bold">
+						{t("contacts.title")}
+					</h2>
+					<p className="text-base text-zinc-300">
+						{t("contacts.description")}
+					</p>
+				</div>
 
-			<div className="grid gap-10 lg:grid-cols-[1.2fr_1fr]">
-				<form
-					onSubmit={handleSubmit}
-					className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-black/20"
+				<div className="relative grid gap-10 lg:grid-cols-[1.2fr_1fr]">
+					<form
+						onSubmit={handleSubmit}
+						className="space-y-4 rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20 backdrop-blur"
 					noValidate
 				>
 					<div>
@@ -127,7 +131,7 @@ const Contacts = () => {
 								handleChange("name", event.target.value)
 							}
 							placeholder={t("contacts.form.placeholders.name")}
-							className="mt-2 w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-zinc-500 focus:border-blue-500 focus:outline-hidden"
+							className="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-zinc-500 focus:border-blue-500 focus:outline-hidden"
 							aria-invalid={Boolean(errors.name)}
 						/>
 						{errors.name && (
@@ -148,7 +152,7 @@ const Contacts = () => {
 								handleChange("email", event.target.value)
 							}
 							placeholder={t("contacts.form.placeholders.email")}
-							className="mt-2 w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-zinc-500 focus:border-blue-500 focus:outline-hidden"
+							className="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-zinc-500 focus:border-blue-500 focus:outline-hidden"
 							aria-invalid={Boolean(errors.email)}
 						/>
 						{errors.email && (
@@ -171,7 +175,7 @@ const Contacts = () => {
 								"contacts.form.placeholders.message",
 							)}
 							rows={6}
-							className="mt-2 w-full rounded-lg border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-zinc-500 focus:border-blue-500 focus:outline-hidden"
+							className="mt-2 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white placeholder:text-zinc-500 focus:border-blue-500 focus:outline-hidden"
 							aria-invalid={Boolean(errors.message)}
 						/>
 						{errors.message && (
@@ -183,7 +187,7 @@ const Contacts = () => {
 					<div className="space-y-3">
 						<Button
 							type="submit"
-							className="w-full justify-center rounded-lg bg-blue-500 px-6 py-3 text-base font-semibold uppercase tracking-wider text-white shadow-lg shadow-blue-500/20 hover:bg-blue-600"
+							className="w-full justify-center rounded-2xl bg-blue-500/80 px-6 py-3 text-base font-semibold uppercase tracking-wider text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-500"
 							disabled={isSubmitting}
 						>
 							{isSubmitting ? (
@@ -220,7 +224,7 @@ const Contacts = () => {
 					</div>
 				</form>
 
-				<div className="space-y-6 rounded-2xl border border-white/10 bg-black/30 p-6 text-center lg:text-left">
+				<div className="space-y-6 rounded-[2rem] border border-white/10 bg-black/40 p-6 text-center shadow-xl shadow-black/30 backdrop-blur lg:text-left">
 					<div className="space-y-4">
 						<p className="text-sm uppercase tracking-[0.4rem] text-blue-200">
 							{t("contacts.buttons.email")}
@@ -231,7 +235,7 @@ const Contacts = () => {
 								target="_blank"
 								className="flex-1"
 							>
-								<Button className="w-full rounded-lg bg-white/10 text-white hover:bg-white/20">
+								<Button className="w-full rounded-2xl border border-white/10 bg-white/10 text-white hover:bg-white/20">
 									{t("contacts.buttons.email")}
 								</Button>
 							</a>
@@ -240,7 +244,7 @@ const Contacts = () => {
 								target="_blank"
 								className="flex-1"
 							>
-								<Button className="w-full rounded-lg bg-white/10 text-white hover:bg-white/20">
+								<Button className="w-full rounded-2xl border border-white/10 bg-white/10 text-white hover:bg-white/20">
 									{t("contacts.buttons.linkedin")}
 								</Button>
 							</a>
@@ -250,7 +254,7 @@ const Contacts = () => {
 						<SheetTrigger asChild>
 							<Button
 								variant="outline"
-								className="w-full justify-center gap-2 rounded-lg border-blue-500/40 bg-blue-500/10 text-blue-100 hover:bg-blue-500/20"
+								className="w-full justify-center gap-2 rounded-2xl border-blue-500/40 bg-blue-500/10 text-blue-100 hover:bg-blue-500/20"
 							>
 								<CalendarDays className="size-4" />
 								{t("contacts.calendly.cta")}
@@ -258,7 +262,7 @@ const Contacts = () => {
 						</SheetTrigger>
 						<SheetContent
 							side="bottom"
-							className="flex h-[85vh] flex-col border-t border-white/10 bg-zinc-950 text-white sm:h-[70vh]"
+							className="flex h-[85vh] flex-col border-t border-white/10 bg-slate-950/90 text-white backdrop-blur-xl sm:h-[70vh]"
 						>
 							<div className="overflow-y-auto px-1">
 								<SheetHeader className="text-left">

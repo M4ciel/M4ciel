@@ -290,6 +290,9 @@
 		]
 	},
 	"techs": {
+		"kicker": "Stack intelligence",
+		"title": "Techs & case studies",
+		"subtitle": "Tools, workflows and the context that proves each stack choice.",
 		"stats": {
 			"years": "+7",
 			"label": "Years of professional experience"
@@ -465,10 +468,13 @@
 		}
 	},
 	"projects": {
+		"kicker": "Code in production",
 		"title": "Projects",
+		"subtitle": "Dashboards, automation pipelines and fullstack experiences focused on measurable outcomes.",
 		"filters": {
 			"all": "All"
 		},
+		"languageFallback": "Multi-stack",
 		"links": {
 			"github": "View on GitHub",
 			"website": "View live"
@@ -527,14 +533,9 @@
 				"href": "https://github.com/M4ciel"
 			},
 			{
-				"id": "medium",
-				"label": "Medium",
-				"href": "https://medium.com/@caiomaciel"
-			},
-			{
-				"id": "certifications",
-				"label": "Certifications",
-				"href": "https://www.credly.com/users/caio-maciel"
+				"id": "linkedin",
+				"label": "LinkedIn",
+				"href": "https://www.linkedin.com/in/caio-maciel"
 			}
 		],
 		"copy": "© {{year}} Caio Maciel. All rights reserved."
