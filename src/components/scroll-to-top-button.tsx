@@ -52,20 +52,25 @@ const ScrollToTopButton = () => {
 	const progressDegrees = progress * 360;
 
 	return (
-		<div
-			className="fixed bottom-6 right-6 z-50 rounded-full p-[2px] shadow-lg shadow-blue-500/20 transition hover:scale-105"
-			style={{
-				background: `conic-gradient(#3b82f6 ${progressDegrees}deg, rgba(255,255,255,0.15) ${progressDegrees}deg)`,
-			}}
-		>
-			<Button
-				onClick={smoothScrollToTop}
-				className="flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900 text-white transition hover:-translate-y-1 cursor-pointer"
-				aria-label="Back to top"
-				size="icon"
+		<div className="fixed bottom-8 right-6 z-50">
+			<div
+				className="relative flex h-16 w-16 items-center justify-center rounded-3xl border border-white/10 bg-slate-950/70 shadow-[0_10px_50px_rgba(23,37,84,0.6)] backdrop-blur transition hover:-translate-y-1"
+				style={{
+					backgroundImage: `conic-gradient(rgba(59,130,246,0.4) ${progressDegrees}deg, rgba(255,255,255,0.1) ${progressDegrees}deg)`,
+				}}
 			>
-				<ArrowUp className="size-5 animate-bounce" />
-			</Button>
+				<Button
+					onClick={smoothScrollToTop}
+					className="group flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-900 text-white transition hover:bg-blue-600 cursor-pointer"
+					size="icon"
+					aria-label="Back to top"
+				>
+					<ArrowUp className="size-5 transition group-hover:-translate-y-1" />
+				</Button>
+			</div>
+			<p className="mt-2 text-center text-[0.65rem] font-semibold uppercase tracking-[0.4rem] text-blue-200">
+				Top
+			</p>
 		</div>
 	);
 };
