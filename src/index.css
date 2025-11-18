@@ -298,7 +298,47 @@ html {
 	border-color: rgba(16, 185, 129, 0.3);
 	background: rgba(16, 185, 129, 0.12);
 	color: #d1fae5;
-	letter-spacing: 0.35rem;
+	letter-spacing: 0.2rem;
+	width: 100%;
+	text-align: center;
+	white-space: normal;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.25rem;
+	padding: 0.85rem 1rem;
+	line-height: 1.4;
+}
+
+@media (min-width: 640px) {
+	.stage-card__signal {
+		letter-spacing: 0.35rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.stage-card__signal {
+		width: fit-content;
+	}
+}
+
+.tool-card__pillar {
+	width: 100%;
+	white-space: normal;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	line-height: 1.4;
+	padding-inline: 0.75rem;
+}
+
+@media (min-width: 640px) {
+	.tool-card__pillar {
+		width: auto;
+		text-align: right;
+		justify-content: flex-end;
+	}
 }
 
 @keyframes signalWave {

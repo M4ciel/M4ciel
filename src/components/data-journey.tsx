@@ -69,7 +69,7 @@ const DataJourney = () => {
 				</p>
 			</div>
 
-			<div className="relative mt-12 grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+			<div className="relative mt-12 grid gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
 				<article className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-gradient-to-br from-slate-950 via-slate-900/70 to-blue-900/30 p-6 shadow-2xl shadow-black/40 md:p-8">
 					<div className="pointer-events-none absolute inset-0 opacity-70">
 						<div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(59,130,246,0.18)_1px,transparent_1px)] bg-[size:20px_20px]" />
@@ -97,11 +97,11 @@ const DataJourney = () => {
 							return (
 								<div
 									key={stage.id}
-									className="stage-stack flex flex-col items-center gap-6"
+									className="stage-stack flex flex-col items-center gap-6 sm:gap-8"
 									onMouseEnter={() => setHoveredStage(index)}
 									onMouseLeave={() => setHoveredStage(null)}
 								>
-									<div className="stage-card relative overflow-hidden rounded-[2.25rem] border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-cyan-300/60 hover:bg-white/10 md:p-7">
+									<div className="stage-card relative w-full overflow-hidden rounded-[2.25rem] border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-cyan-300/60 hover:bg-white/10 md:p-7">
 										<div className="stage-card__glow" aria-hidden />
 										<div className="flex flex-wrap items-center gap-4">
 											<div className="stage-card__step">
@@ -164,7 +164,7 @@ const DataJourney = () => {
 							className="rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-lg shadow-black/20 transition hover:-translate-y-1 hover:border-purple-300/60 hover:bg-white/10"
 						>
 							<div className="flex flex-col gap-3">
-								<div className="flex items-center justify-between gap-2">
+								<div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
 									<div>
 										<p className="text-[0.65rem] font-semibold uppercase tracking-[0.4rem] text-purple-200">
 											{tool.role}
@@ -173,7 +173,7 @@ const DataJourney = () => {
 											{tool.title}
 										</h3>
 									</div>
-									<Badge className="border border-white/20 bg-white/10 text-xs text-zinc-100">
+									<Badge className="tool-card__pillar border border-white/20 bg-white/10 text-xs text-zinc-100">
 										{tool.pillar}
 									</Badge>
 								</div>
