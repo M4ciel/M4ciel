@@ -1,5 +1,6 @@
 {
 	"navbar": {
+		"home": "Home",
 		"language": "Language",
 		"about": "About",
 		"experience": "Experience",
@@ -10,7 +11,6 @@
 		"greeting": "Hello!",
 		"title": "I'm Caio Maciel",
 		"role": "Data Engineer and FullStack Developer",
-
 		"downloadButton": {
 			"title": "Download my CV",
 			"data": {
@@ -20,17 +20,72 @@
 			"dev": {
 				"title": "Fullstack Developer CV",
 				"file": "cv-dev_caio-maciel"
-			},
-			"dataEngineer": "Data Engineer CV",
-			"fullStackDeveloper": "Fullstack Developer CV"
+			}
+		},
+		"actions": {
+			"dataCall": "Book a Data call",
+			"devProjects": "See FullStack projects"
+		},
+		"social": {
+			"label": "Connect with me",
+			"linkedin": "LinkedIn profile",
+			"github": "GitHub profile"
 		},
 		"altImg": "Hero illustration"
 	},
 	"about": {
+		"kicker": "Who I am",
 		"title": "A brief introduction about me",
 		"paragraphs": {
 			"first": "I'm Caio Maciel, a Data Engineer and FullStack Developer with over 5 years of experience building robust, scalable and performance-driven solutions. I love data, well-crafted APIs and clean architecture, and that shows up in every project I build, from pipelines with Airflow, dbt and BigQuery to modern applications in TypeScript, Go and Python.",
 			"second": "Away from the keyboard I'm passionate about sports (mainly volleyball 🏐), music (from sertanejo to Bruno Mars 🎵), playing guitar and good conversations. I believe technology is a bridge, and my goal is to build paths that connect data, people and real results."
+		},
+		"cards": {
+			"values": {
+				"id": "values",
+				"title": "Values",
+				"description": "How I steer decisions",
+				"items": [
+					"Radical transparency with stakeholders.",
+					"Impact and risk reduction guide every priority.",
+					"Reliable data first, hype later."
+				]
+			},
+			"softSkills": {
+				"id": "softSkills",
+				"title": "Soft skills",
+				"description": "Rituals that keep delivery steady",
+				"items": [
+					"I mediate between tech and business leaders.",
+					"I codify documentation and onboarding playbooks.",
+					"I keep teams calm and shipping under pressure."
+				]
+			},
+			"hobbies": {
+				"id": "hobbies",
+				"title": "Hobbies",
+				"description": "Energy outside the keyboard",
+				"items": [
+					"Volleyball and outdoor sports to reset focus.",
+					"Guitar and music to unlock creativity.",
+					"Mentoring and sharing with other devs."
+				]
+			},
+			"community": {
+				"id": "community",
+				"title": "Community impact",
+				"description": "Mentoring & volunteering",
+				"items": [
+					"Crafting talks for data and product communities.",
+					"Volunteer mentoring for juniors and career switchers.",
+					"Supporting social projects with analytics and automation."
+				]
+			}
+		},
+		"cta": "View full journey",
+		"modal": {
+			"title": "Detailed timeline",
+			"subtitle": "A walkthrough of the projects that show how I deliver value with data and software."
 		},
 		"imageAlt": "About section illustration"
 	},
@@ -246,7 +301,30 @@
 		},
 		"ticker": {
 			"label": "Core stack",
-			"hint": "Hover to pause and explore the tools I use daily."
+			"hint": "Hover to pause, then click any tech to open its case study."
+		},
+		"kpis": {
+			"lead": "Proof in numbers",
+			"items": {
+				"throughput": {
+					"id": "throughput",
+					"value": "-10h",
+					"label": "pipeline runtime",
+					"description": "Apache Airflow workloads at Datahub now finish 1M+ record batches 10h faster."
+				},
+				"costs": {
+					"id": "costs",
+					"value": "-50%",
+					"label": "ingestion window",
+					"description": "BigQuery + dbt restructuring cut ingestion runtime (and spend) by 50%."
+				},
+				"sla": {
+					"id": "sla",
+					"value": "+10%",
+					"label": "production SLA",
+					"description": "Node.js, AWS Lambda and PostgreSQL integrations for Suvinil increased uptime by 10%."
+				}
+			}
 		},
 		"caseLabels": {
 			"project": "Project",
@@ -410,9 +488,55 @@
 	},
 	"contacts": {
 		"title": "Get in touch",
+		"description": "Prefer async conversations? Drop a quick note below or use the shortcuts for an instant reply.",
 		"buttons": {
 			"email": "Email",
 			"linkedin": "LinkedIn"
+		},
+		"form": {
+			"name": "Name",
+			"email": "Email",
+			"message": "Message",
+			"placeholders": {
+				"name": "How should I call you?",
+				"email": "name@company.com",
+				"message": "Share the context, constraints and the outcome you expect."
+			},
+			"submit": "Send message",
+			"success": "Thanks! I received your message and will reply shortly.",
+			"error": "I couldn’t send this message. Please try again or use the quick links.",
+			"missingEndpoint": "Set VITE_CONTACT_FORM_ENDPOINT to enable form submissions.",
+			"validation": {
+				"name": "Please share your full name.",
+				"email": "Provide a valid email address.",
+				"message": "Let me know a bit more (10 characters minimum)."
+			}
+		},
+		"calendly": {
+			"cta": "Schedule on Calendly",
+			"title": "Pick a time",
+			"subtitle": "Book a 30-minute session to talk about data, architecture or hiring needs.",
+			"description": "Slots are synced in real time — select the window that fits you best."
 		}
+	},
+	"footer": {
+		"links": [
+			{
+				"id": "github",
+				"label": "GitHub",
+				"href": "https://github.com/M4ciel"
+			},
+			{
+				"id": "medium",
+				"label": "Medium",
+				"href": "https://medium.com/@caiomaciel"
+			},
+			{
+				"id": "certifications",
+				"label": "Certifications",
+				"href": "https://www.credly.com/users/caio-maciel"
+			}
+		],
+		"copy": "© {{year}} Caio Maciel. All rights reserved."
 	}
 }
