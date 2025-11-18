@@ -289,6 +289,76 @@
 			}
 		]
 	},
+	"dataJourney": {
+		"kicker": "Modern Data Stack",
+		"title": "Roadmap interativo da ingestão ao analytics",
+		"subtitle": "Um canvas que mostra como conecto Airbyte, Airflow, dbt e BigQuery em produção para clientes reais.",
+		"legend": {
+			"title": "Canvas vivo",
+			"hint": "Passe o mouse em cada bloco e veja os sinais atravessando ingestão, transformação e analytics."
+		},
+		"stages": [
+			{
+				"id": "ingestion",
+				"title": "Ingestão",
+				"description": "Conectores Airbyte ingerem SaaS, OLTP e streams enquanto o Airflow garante retries, gestão de segredos e observabilidade.",
+				"signal": "1M+ linhas/hora com reprocessamento seguro.",
+				"badge": "Airbyte + Airflow"
+			},
+			{
+				"id": "transformation",
+				"title": "Transformação",
+				"description": "dbt constrói a camada semântica com contratos, testes e slim CI antes de publicar as tabelas em marts curados.",
+				"signal": "180+ modelos versionados e documentados.",
+				"badge": "dbt core"
+			},
+			{
+				"id": "analytics",
+				"title": "Analytics & serving",
+				"description": "BigQuery alimenta dashboards, apps de IA e reverse ETL devolvendo os insights aos sistemas de negócios.",
+				"signal": "Freshness abaixo de 90s para líderes.",
+				"badge": "BigQuery"
+			}
+		],
+		"tools": [
+			{
+				"id": "airflow",
+				"title": "Apache Airflow",
+				"role": "Orquestração",
+				"pillar": "Fábrica de DAGs com governança",
+				"description": "Desenhei patterns reaproveitáveis, versionamento e monitores de SLA para squads plugarem novos conectores sem boilerplate.",
+				"outcome": "Reduzi o lead time de ingestão e o desgaste de plantão centralizando alertas e retries inteligentes.",
+				"tags": ["DAGs dinâmicas", "Data contracts", "Observabilidade"]
+			},
+			{
+				"id": "airbyte",
+				"title": "Airbyte",
+				"role": "Conectores",
+				"pillar": "Catálogo de fontes & CDC",
+				"description": "Cuidei de conectores para CRMs SaaS, meios de pagamento e réplicas PostgreSQL com merges incrementais e pistas de rejeição.",
+				"outcome": "Novas fontes entram em produção em poucos dias e seguem o mesmo trilho governado.",
+				"tags": ["CDC", "Ingest SaaS", "Quality gates"]
+			},
+			{
+				"id": "dbt",
+				"title": "dbt",
+				"role": "Camada semântica",
+				"pillar": "Rituais de analytics engineering",
+				"description": "Apliquei contratos, exposures, testes e lineage para que analistas confiem nos mesmos marts curados entre squads.",
+				"outcome": "Descoberta mais rápida e custos menores ao limpar tabelas e snapshots sem uso.",
+				"tags": ["Contratos", "Testes", "Slim CI"]
+			},
+			{
+				"id": "bigquery",
+				"title": "BigQuery",
+				"role": "Data warehouse",
+				"pillar": "Servir e governar",
+				"description": "Particionamento, clustering e políticas linha-a-linha deixam o warehouse eficiente e em conformidade com workloads fintech.",
+				"outcome": "Analytics, notebooks de ML e reverse ETL compartilham o mesmo repositório sem conflitos.",
+				"tags": ["Servir", "Segurança", "Controle de custos"]
+			}
+		]
+	},
 	"techs": {
 		"kicker": "Stack em produção",
 		"title": "Techs & estudos de caso",

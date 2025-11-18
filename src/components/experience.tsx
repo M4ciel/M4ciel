@@ -72,7 +72,6 @@ const Experience = () => {
 			parseDate(a.period.start).getTime()
 		);
 	});
-
 	return (
 		<section
 			className="relative mx-auto w-full px-4 pb-16 text-white lg:max-w-4xl lg:px-0 xl:max-w-7xl"
@@ -93,7 +92,6 @@ const Experience = () => {
 					{t("experience.subtitle")}
 				</p>
 			</div>
-
 			<div className="relative mt-12">
 				<span
 					aria-hidden

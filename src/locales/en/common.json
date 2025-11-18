@@ -289,6 +289,76 @@
 			}
 		]
 	},
+	"dataJourney": {
+		"kicker": "Modern Data Stack",
+		"title": "Interactive roadmap from ingestion to analytics",
+		"subtitle": "A canvas that shows how the stack flows in production when I mix Airbyte, Airflow, dbt and BigQuery for clients.",
+		"legend": {
+			"title": "Live canvas",
+			"hint": "Hover each block to see how the signals travel from ingestion to analytics."
+		},
+		"stages": [
+			{
+				"id": "ingestion",
+				"title": "Ingestion",
+				"description": "Airbyte connectors ingest SaaS, OLTP and event streams while Airflow guarantees retries, secrets management and observability.",
+				"signal": "1M+ rows/hour with replay-safe jobs.",
+				"badge": "Airbyte + Airflow"
+			},
+			{
+				"id": "transformation",
+				"title": "Transformation",
+				"description": "dbt builds the semantic layer with contracts, tests and slim CI before tables land in curated marts.",
+				"signal": "180+ models versioned and documented.",
+				"badge": "dbt core"
+			},
+			{
+				"id": "analytics",
+				"title": "Analytics & serving",
+				"description": "BigQuery warehouses power dashboards, AI apps and reverse ETL pushing the insights back to business tools.",
+				"signal": "Sub-90s freshness for decision makers.",
+				"badge": "BigQuery"
+			}
+		],
+		"tools": [
+			{
+				"id": "airflow",
+				"title": "Apache Airflow",
+				"role": "Orchestration",
+				"pillar": "Governance-first DAG factory",
+				"description": "Designed factory patterns, versioned DAGs and SLA monitors so squads plug-in new connectors without rewriting boilerplate.",
+				"outcome": "Reduced ingestion lead time and removed pager fatigue by centralizing alerting plus retries.",
+				"tags": ["Dynamic DAGs", "Data contracts", "Observability"]
+			},
+			{
+				"id": "airbyte",
+				"title": "Airbyte",
+				"role": "Connectors",
+				"pillar": "Source catalog & CDC",
+				"description": "Curated connectors spanning SaaS CRMs, payment providers and PostgreSQL replicas with incremental merges and dead-letter lanes.",
+				"outcome": "New sources go live within days, keeping business units tied to a governed ingestion path.",
+				"tags": ["CDC", "SaaS ingest", "Quality gates"]
+			},
+			{
+				"id": "dbt",
+				"title": "dbt",
+				"role": "Semantic layer",
+				"pillar": "Analytics engineering rituals",
+				"description": "Applied contracts, exposures, data tests and lineage docs so analysts trust the same curated marts across squads.",
+				"outcome": "Accelerated discovery while cutting storage costs by pruning unused tables and snapshots.",
+				"tags": ["Contracts", "Testing", "Slim CI"]
+			},
+			{
+				"id": "bigquery",
+				"title": "BigQuery",
+				"role": "Warehouse",
+				"pillar": "Serving and governance",
+				"description": "Partitioning, clustering and row-level security keep the warehouse cost-efficient and compliant for fintech workloads.",
+				"outcome": "Analytics, ML notebooks and reverse ETL jobs share the same trusted warehouse without conflicts.",
+				"tags": ["Serving", "Security", "Cost control"]
+			}
+		]
+	},
 	"techs": {
 		"kicker": "Stack intelligence",
 		"title": "Techs & case studies",

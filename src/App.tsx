@@ -1,6 +1,7 @@
 import About from "./components/about";
 import Contacts from "./components/contacts";
 import Experience from "./components/experience";
+import DataJourney from "./components/data-journey";
 import Hero from "./components/hero";
 import Projects from "./components/projects";
 import Techs from "./components/techs";
@@ -19,6 +20,7 @@ function App() {
 				<Hero />
 				<About />
 				<Experience />
+				<DataJourney />
 				<Techs />
 				<Projects />
 				<Contacts />
