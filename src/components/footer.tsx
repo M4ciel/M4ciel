@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Award, Github, PenSquare } from "lucide-react";
+import type { JSX } from "react";
 
 type FooterLink = {
 	id: string;
